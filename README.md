@@ -58,7 +58,8 @@ cd ios && xcodebuild -workspace Runner.xcworkspace -scheme Runner -configuration
 The home screen offers **قراءة القرآن** or **المسابقة**. Matches run on the NestJS server in
 `../almaher-server` (Socket.IO, Postgres for results). Three seats: player 1, player 2 and the
 referee (الحكم); modes: same room or remote. The app connects to `SERVER_URL`
-(default `http://localhost:3000`; Android emulator: `--dart-define=SERVER_URL=http://10.0.2.2:3000`).
+(default: the production server `https://almaher-server-production.up.railway.app` on Railway;
+local server: `--dart-define=SERVER_URL=http://localhost:3000`, Android emulator: `http://10.0.2.2:3000`).
 
 ```
 cd ../almaher-server && npm install && npm run start:dev

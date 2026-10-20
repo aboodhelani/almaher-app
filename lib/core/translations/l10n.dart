@@ -18,10 +18,8 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(
-      _current != null,
-      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
-    );
+    assert(_current != null,
+        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
     return _current!;
   }
 
@@ -43,10 +41,8 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(
-      instance != null,
-      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
-    );
+    assert(instance != null,
+        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
     return instance!;
   }
 
@@ -56,42 +52,82 @@ class S {
 
   /// `الماهر`
   String get app_name {
-    return Intl.message('الماهر', name: 'app_name', desc: '', args: []);
+    return Intl.message(
+      'الماهر',
+      name: 'app_name',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `اللغة`
   String get language {
-    return Intl.message('اللغة', name: 'language', desc: '', args: []);
+    return Intl.message(
+      'اللغة',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `العربية`
   String get arabic {
-    return Intl.message('العربية', name: 'arabic', desc: '', args: []);
+    return Intl.message(
+      'العربية',
+      name: 'arabic',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `English`
   String get english {
-    return Intl.message('English', name: 'english', desc: '', args: []);
+    return Intl.message(
+      'English',
+      name: 'english',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `القرآن الكريم`
   String get quran {
-    return Intl.message('القرآن الكريم', name: 'quran', desc: '', args: []);
+    return Intl.message(
+      'القرآن الكريم',
+      name: 'quran',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `فهرس السور`
   String get surahs_index {
-    return Intl.message('فهرس السور', name: 'surahs_index', desc: '', args: []);
+    return Intl.message(
+      'فهرس السور',
+      name: 'surahs_index',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `صفحة`
   String get page {
-    return Intl.message('صفحة', name: 'page', desc: '', args: []);
+    return Intl.message(
+      'صفحة',
+      name: 'page',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الجزء`
   String get juz {
-    return Intl.message('الجزء', name: 'juz', desc: '', args: []);
+    return Intl.message(
+      'الجزء',
+      name: 'juz',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `{count} آية`
@@ -106,12 +142,22 @@ class S {
 
   /// `مكية`
   String get meccan {
-    return Intl.message('مكية', name: 'meccan', desc: '', args: []);
+    return Intl.message(
+      'مكية',
+      name: 'meccan',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مدنية`
   String get medinan {
-    return Intl.message('مدنية', name: 'medinan', desc: '', args: []);
+    return Intl.message(
+      'مدنية',
+      name: 'medinan',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تعذر تحميل المصحف`
@@ -126,22 +172,42 @@ class S {
 
   /// `إعادة المحاولة`
   String get retry {
-    return Intl.message('إعادة المحاولة', name: 'retry', desc: '', args: []);
+    return Intl.message(
+      'إعادة المحاولة',
+      name: 'retry',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الإعدادات`
   String get settings {
-    return Intl.message('الإعدادات', name: 'settings', desc: '', args: []);
+    return Intl.message(
+      'الإعدادات',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `المظهر`
   String get appearance {
-    return Intl.message('المظهر', name: 'appearance', desc: '', args: []);
+    return Intl.message(
+      'المظهر',
+      name: 'appearance',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الوضع الليلي`
   String get dark_mode {
-    return Intl.message('الوضع الليلي', name: 'dark_mode', desc: '', args: []);
+    return Intl.message(
+      'الوضع الليلي',
+      name: 'dark_mode',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `خلفية سوداء ونص أبيض`
@@ -156,7 +222,12 @@ class S {
 
   /// `بحث`
   String get search {
-    return Intl.message('بحث', name: 'search', desc: '', args: []);
+    return Intl.message(
+      'بحث',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `ابحث عن سورة أو آية`
@@ -181,7 +252,12 @@ class S {
 
   /// `السور`
   String get search_surahs {
-    return Intl.message('السور', name: 'search_surahs', desc: '', args: []);
+    return Intl.message(
+      'السور',
+      name: 'search_surahs',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مطابقة تامة`
@@ -256,12 +332,22 @@ class S {
 
   /// `الآية`
   String get search_ayah {
-    return Intl.message('الآية', name: 'search_ayah', desc: '', args: []);
+    return Intl.message(
+      'الآية',
+      name: 'search_ayah',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `التجويد`
   String get tajweed {
-    return Intl.message('التجويد', name: 'tajweed', desc: '', args: []);
+    return Intl.message(
+      'التجويد',
+      name: 'tajweed',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تلوين أحكام التجويد`
@@ -336,27 +422,52 @@ class S {
 
   /// `الموضع`
   String get tajweed_position {
-    return Intl.message('الموضع', name: 'tajweed_position', desc: '', args: []);
+    return Intl.message(
+      'الموضع',
+      name: 'tajweed_position',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الحرف`
   String get tajweed_letters {
-    return Intl.message('الحرف', name: 'tajweed_letters', desc: '', args: []);
+    return Intl.message(
+      'الحرف',
+      name: 'tajweed_letters',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `المدة`
   String get tajweed_duration {
-    return Intl.message('المدة', name: 'tajweed_duration', desc: '', args: []);
+    return Intl.message(
+      'المدة',
+      name: 'tajweed_duration',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مثال`
   String get tajweed_example {
-    return Intl.message('مثال', name: 'tajweed_example', desc: '', args: []);
+    return Intl.message(
+      'مثال',
+      name: 'tajweed_example',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `آية`
   String get ayah_label {
-    return Intl.message('آية', name: 'ayah_label', desc: '', args: []);
+    return Intl.message(
+      'آية',
+      name: 'ayah_label',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الآيات المتشابهة`
@@ -391,7 +502,12 @@ class S {
 
   /// `تطابق تام`
   String get similar_full {
-    return Intl.message('تطابق تام', name: 'similar_full', desc: '', args: []);
+    return Intl.message(
+      'تطابق تام',
+      name: 'similar_full',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تشابه جزئي`
@@ -456,7 +572,12 @@ class S {
 
   /// `قراءة القرآن`
   String get home_read {
-    return Intl.message('قراءة القرآن', name: 'home_read', desc: '', args: []);
+    return Intl.message(
+      'قراءة القرآن',
+      name: 'home_read',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `المصحف مع التجويد والمتشابهات والبحث`
@@ -471,7 +592,12 @@ class S {
 
   /// `المسابقة`
   String get home_play {
-    return Intl.message('المسابقة', name: 'home_play', desc: '', args: []);
+    return Intl.message(
+      'المسابقة',
+      name: 'home_play',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تحدَّ حافظًا آخر بوجود حكم`
@@ -506,17 +632,32 @@ class S {
 
   /// `اسمك`
   String get match_your_name {
-    return Intl.message('اسمك', name: 'match_your_name', desc: '', args: []);
+    return Intl.message(
+      'اسمك',
+      name: 'match_your_name',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `رمز المباراة`
   String get match_code {
-    return Intl.message('رمز المباراة', name: 'match_code', desc: '', args: []);
+    return Intl.message(
+      'رمز المباراة',
+      name: 'match_code',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `طريقة اللعب`
   String get match_mode {
-    return Intl.message('طريقة اللعب', name: 'match_mode', desc: '', args: []);
+    return Intl.message(
+      'طريقة اللعب',
+      name: 'match_mode',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `في نفس المكان`
@@ -541,7 +682,12 @@ class S {
 
   /// `دورك`
   String get match_your_role {
-    return Intl.message('دورك', name: 'match_your_role', desc: '', args: []);
+    return Intl.message(
+      'دورك',
+      name: 'match_your_role',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `المتسابق الأول`
@@ -686,17 +832,32 @@ class S {
 
   /// `أجاب`
   String get match_answered {
-    return Intl.message('أجاب', name: 'match_answered', desc: '', args: []);
+    return Intl.message(
+      'أجاب',
+      name: 'match_answered',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `…`
   String get match_waiting_answer {
-    return Intl.message('…', name: 'match_waiting_answer', desc: '', args: []);
+    return Intl.message(
+      '…',
+      name: 'match_waiting_answer',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `نقطة`
   String get match_got_point {
-    return Intl.message('نقطة', name: 'match_got_point', desc: '', args: []);
+    return Intl.message(
+      'نقطة',
+      name: 'match_got_point',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `رقم الآية`
@@ -711,7 +872,12 @@ class S {
 
   /// `إرسال`
   String get match_send {
-    return Intl.message('إرسال', name: 'match_send', desc: '', args: []);
+    return Intl.message(
+      'إرسال',
+      name: 'match_send',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تم الإرسال، بانتظار كشف الإجابات`
@@ -776,7 +942,12 @@ class S {
 
   /// `تعادل`
   String get match_draw {
-    return Intl.message('تعادل', name: 'match_draw', desc: '', args: []);
+    return Intl.message(
+      'تعادل',
+      name: 'match_draw',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الفائز: {name}`
@@ -791,12 +962,22 @@ class S {
 
   /// `مباراة جديدة`
   String get match_new {
-    return Intl.message('مباراة جديدة', name: 'match_new', desc: '', args: []);
+    return Intl.message(
+      'مباراة جديدة',
+      name: 'match_new',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `خروج`
   String get match_leave {
-    return Intl.message('خروج', name: 'match_leave', desc: '', args: []);
+    return Intl.message(
+      'خروج',
+      name: 'match_leave',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تعذر الاتصال بالخادم`
@@ -1031,7 +1212,12 @@ class S {
 
   /// `المزاد`
   String get round_auction {
-    return Intl.message('المزاد', name: 'round_auction', desc: '', args: []);
+    return Intl.message(
+      'المزاد',
+      name: 'round_auction',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `المتشابهات`
@@ -1046,7 +1232,12 @@ class S {
 
   /// `الجرس`
   String get round_buzzer {
-    return Intl.message('الجرس', name: 'round_buzzer', desc: '', args: []);
+    return Intl.message(
+      'الجرس',
+      name: 'round_buzzer',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `أجيبا بالتناوب: لكل متسابق {strikes} أخطاء وتجاوز واحد`
@@ -1100,14 +1291,8 @@ class S {
   }
 
   /// `الفقرة {round} من {rounds} · السؤال {q} من {qs} · ({n}/{total})`
-  String match_progress(
-    String round,
-    String rounds,
-    String q,
-    String qs,
-    String n,
-    String total,
-  ) {
+  String match_progress(String round, String rounds, String q, String qs,
+      String n, String total) {
     return Intl.message(
       'الفقرة $round من $rounds · السؤال $q من $qs · ($n/$total)',
       name: 'match_progress',
@@ -1148,7 +1333,12 @@ class S {
 
   /// `مزايدتك`
   String get match_your_bid {
-    return Intl.message('مزايدتك', name: 'match_your_bid', desc: '', args: []);
+    return Intl.message(
+      'مزايدتك',
+      name: 'match_your_bid',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مزايدتك: {count}، بانتظار الحكم`
@@ -1243,7 +1433,12 @@ class S {
 
   /// `نجح`
   String get match_recite_ok {
-    return Intl.message('نجح', name: 'match_recite_ok', desc: '', args: []);
+    return Intl.message(
+      'نجح',
+      name: 'match_recite_ok',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `لم ينجح`
@@ -1258,17 +1453,32 @@ class S {
 
   /// `صحيح`
   String get match_correct {
-    return Intl.message('صحيح', name: 'match_correct', desc: '', args: []);
+    return Intl.message(
+      'صحيح',
+      name: 'match_correct',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `خطأ`
   String get match_strike {
-    return Intl.message('خطأ', name: 'match_strike', desc: '', args: []);
+    return Intl.message(
+      'خطأ',
+      name: 'match_strike',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `خطأ`
   String get match_wrong {
-    return Intl.message('خطأ', name: 'match_wrong', desc: '', args: []);
+    return Intl.message(
+      'خطأ',
+      name: 'match_wrong',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `بانتظار من يضغط الجرس`
@@ -1293,7 +1503,12 @@ class S {
 
   /// `بلا نقطة`
   String get match_no_point {
-    return Intl.message('بلا نقطة', name: 'match_no_point', desc: '', args: []);
+    return Intl.message(
+      'بلا نقطة',
+      name: 'match_no_point',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مفتاح الإجابة ({said} من {total})`
@@ -1398,7 +1613,12 @@ class S {
 
   /// `العب الآن`
   String get home_play_now {
-    return Intl.message('العب الآن', name: 'home_play_now', desc: '', args: []);
+    return Intl.message(
+      'العب الآن',
+      name: 'home_play_now',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `سبع فقرات · ٢٨ سؤالًا`
@@ -1413,7 +1633,12 @@ class S {
 
   /// `المزيد`
   String get home_more {
-    return Intl.message('المزيد', name: 'home_more', desc: '', args: []);
+    return Intl.message(
+      'المزيد',
+      name: 'home_more',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `دليل التجويد`
@@ -1428,7 +1653,12 @@ class S {
 
   /// `الإعدادات`
   String get home_settings {
-    return Intl.message('الإعدادات', name: 'home_settings', desc: '', args: []);
+    return Intl.message(
+      'الإعدادات',
+      name: 'home_settings',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `اسم السورة أو رقمها`
@@ -1463,7 +1693,12 @@ class S {
 
   /// `الوضع الفاتح`
   String get light_mode {
-    return Intl.message('الوضع الفاتح', name: 'light_mode', desc: '', args: []);
+    return Intl.message(
+      'الوضع الفاتح',
+      name: 'light_mode',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `جاهز للتحدي؟`
@@ -1548,12 +1783,22 @@ class S {
 
   /// `أنت`
   String get match_you_short {
-    return Intl.message('أنت', name: 'match_you_short', desc: '', args: []);
+    return Intl.message(
+      'أنت',
+      name: 'match_you_short',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `ضد`
   String get match_vs {
-    return Intl.message('ضد', name: 'match_vs', desc: '', args: []);
+    return Intl.message(
+      'ضد',
+      name: 'match_vs',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `يجيب الآن`
@@ -1628,7 +1873,12 @@ class S {
 
   /// `المقاعد`
   String get match_seats {
-    return Intl.message('المقاعد', name: 'match_seats', desc: '', args: []);
+    return Intl.message(
+      'المقاعد',
+      name: 'match_seats',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `النتيجة النهائية`
@@ -1663,7 +1913,12 @@ class S {
 
   /// `سؤال بديل`
   String get match_replace {
-    return Intl.message('سؤال بديل', name: 'match_replace', desc: '', args: []);
+    return Intl.message(
+      'سؤال بديل',
+      name: 'match_replace',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تبديل السؤال؟`
@@ -1698,7 +1953,12 @@ class S {
 
   /// `إلغاء`
   String get match_cancel {
-    return Intl.message('إلغاء', name: 'match_cancel', desc: '', args: []);
+    return Intl.message(
+      'إلغاء',
+      name: 'match_cancel',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `سؤال بديل`
@@ -1733,7 +1993,12 @@ class S {
 
   /// `بلا وقت`
   String get match_no_timer {
-    return Intl.message('بلا وقت', name: 'match_no_timer', desc: '', args: []);
+    return Intl.message(
+      'بلا وقت',
+      name: 'match_no_timer',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `لوحة التشكيل`
@@ -1778,7 +2043,12 @@ class S {
 
   /// `حفظ الصفحة`
   String get save_page {
-    return Intl.message('حفظ الصفحة', name: 'save_page', desc: '', args: []);
+    return Intl.message(
+      'حفظ الصفحة',
+      name: 'save_page',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `حُفظت الصفحة {page}`
@@ -1803,7 +2073,12 @@ class S {
 
   /// `تراجع`
   String get undo {
-    return Intl.message('تراجع', name: 'undo', desc: '', args: []);
+    return Intl.message(
+      'تراجع',
+      name: 'undo',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `{count} صفحة محفوظة`
@@ -1818,7 +2093,12 @@ class S {
 
   /// `المزيد`
   String get reader_more {
-    return Intl.message('المزيد', name: 'reader_more', desc: '', args: []);
+    return Intl.message(
+      'المزيد',
+      name: 'reader_more',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تسجيل الدخول`
@@ -1893,7 +2173,12 @@ class S {
 
   /// `دخول`
   String get auth_login {
-    return Intl.message('دخول', name: 'auth_login', desc: '', args: []);
+    return Intl.message(
+      'دخول',
+      name: 'auth_login',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `إنشاء الحساب`
@@ -1988,32 +2273,62 @@ class S {
 
   /// `حسابي`
   String get profile_title {
-    return Intl.message('حسابي', name: 'profile_title', desc: '', args: []);
+    return Intl.message(
+      'حسابي',
+      name: 'profile_title',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مباريات`
   String get profile_matches {
-    return Intl.message('مباريات', name: 'profile_matches', desc: '', args: []);
+    return Intl.message(
+      'مباريات',
+      name: 'profile_matches',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `فوز`
   String get profile_wins {
-    return Intl.message('فوز', name: 'profile_wins', desc: '', args: []);
+    return Intl.message(
+      'فوز',
+      name: 'profile_wins',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تعادل`
   String get profile_draws {
-    return Intl.message('تعادل', name: 'profile_draws', desc: '', args: []);
+    return Intl.message(
+      'تعادل',
+      name: 'profile_draws',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `خسارة`
   String get profile_losses {
-    return Intl.message('خسارة', name: 'profile_losses', desc: '', args: []);
+    return Intl.message(
+      'خسارة',
+      name: 'profile_losses',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `نقاط`
   String get profile_points {
-    return Intl.message('نقاط', name: 'profile_points', desc: '', args: []);
+    return Intl.message(
+      'نقاط',
+      name: 'profile_points',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `نسبة الفوز {rate}٪`
@@ -2048,7 +2363,12 @@ class S {
 
   /// `ضد {name}`
   String profile_vs(String name) {
-    return Intl.message('ضد $name', name: 'profile_vs', desc: '', args: [name]);
+    return Intl.message(
+      'ضد $name',
+      name: 'profile_vs',
+      desc: '',
+      args: [name],
+    );
   }
 
   /// `لوحة المتصدرين`
@@ -2073,7 +2393,12 @@ class S {
 
   /// `تسجيل الخروج`
   String get logout {
-    return Intl.message('تسجيل الخروج', name: 'logout', desc: '', args: []);
+    return Intl.message(
+      'تسجيل الخروج',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تلعب باسم {name}`
@@ -2118,7 +2443,12 @@ class S {
 
   /// `(أنت)`
   String get you_label {
-    return Intl.message('(أنت)', name: 'you_label', desc: '', args: []);
+    return Intl.message(
+      '(أنت)',
+      name: 'you_label',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `المسابقة`
@@ -2183,12 +2513,22 @@ class S {
 
   /// `الميكروفون`
   String get media_mic {
-    return Intl.message('الميكروفون', name: 'media_mic', desc: '', args: []);
+    return Intl.message(
+      'الميكروفون',
+      name: 'media_mic',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الكاميرا`
   String get media_camera {
-    return Intl.message('الكاميرا', name: 'media_camera', desc: '', args: []);
+    return Intl.message(
+      'الكاميرا',
+      name: 'media_camera',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `لم ينضم بعد`
@@ -2243,12 +2583,22 @@ class S {
 
   /// `القراء`
   String get library_reciters {
-    return Intl.message('القراء', name: 'library_reciters', desc: '', args: []);
+    return Intl.message(
+      'القراء',
+      name: 'library_reciters',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مضمّن`
   String get library_bundled {
-    return Intl.message('مضمّن', name: 'library_bundled', desc: '', args: []);
+    return Intl.message(
+      'مضمّن',
+      name: 'library_bundled',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `محمّل`
@@ -2263,22 +2613,42 @@ class S {
 
   /// `تحميل`
   String get library_download {
-    return Intl.message('تحميل', name: 'library_download', desc: '', args: []);
+    return Intl.message(
+      'تحميل',
+      name: 'library_download',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `حذف`
   String get library_delete {
-    return Intl.message('حذف', name: 'library_delete', desc: '', args: []);
+    return Intl.message(
+      'حذف',
+      name: 'library_delete',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مستخدم`
   String get library_in_use {
-    return Intl.message('مستخدم', name: 'library_in_use', desc: '', args: []);
+    return Intl.message(
+      'مستخدم',
+      name: 'library_in_use',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `استخدام`
   String get library_use {
-    return Intl.message('استخدام', name: 'library_use', desc: '', args: []);
+    return Intl.message(
+      'استخدام',
+      name: 'library_use',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تعذّر تحميل القائمة. تحقق من اتصالك بالإنترنت.`
@@ -2343,17 +2713,32 @@ class S {
 
   /// `التفسير`
   String get tafsir {
-    return Intl.message('التفسير', name: 'tafsir', desc: '', args: []);
+    return Intl.message(
+      'التفسير',
+      name: 'tafsir',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الترجمة`
   String get translation {
-    return Intl.message('الترجمة', name: 'translation', desc: '', args: []);
+    return Intl.message(
+      'الترجمة',
+      name: 'translation',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الاستماع`
   String get recitation {
-    return Intl.message('الاستماع', name: 'recitation', desc: '', args: []);
+    return Intl.message(
+      'الاستماع',
+      name: 'recitation',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `استمع من هذه الآية`
@@ -2398,7 +2783,12 @@ class S {
 
   /// `المزيد…`
   String get more_downloads {
-    return Intl.message('المزيد…', name: 'more_downloads', desc: '', args: []);
+    return Intl.message(
+      'المزيد…',
+      name: 'more_downloads',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تعذّر عرض النص`
@@ -2483,7 +2873,12 @@ class S {
 
   /// `إلغاء`
   String get cancel {
-    return Intl.message('إلغاء', name: 'cancel', desc: '', args: []);
+    return Intl.message(
+      'إلغاء',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `عن التطبيق والخصوصية`
@@ -2638,7 +3033,12 @@ class S {
 
   /// `طريقة اللعب`
   String get rules_title {
-    return Intl.message('طريقة اللعب', name: 'rules_title', desc: '', args: []);
+    return Intl.message(
+      'طريقة اللعب',
+      name: 'rules_title',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `المباراة`
@@ -2663,20 +3063,27 @@ class S {
 
   /// `للمتسابق`
   String get rules_players {
-    return Intl.message('للمتسابق', name: 'rules_players', desc: '', args: []);
+    return Intl.message(
+      'للمتسابق',
+      name: 'rules_players',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `دور الحكم`
   String get rules_referee {
-    return Intl.message('دور الحكم', name: 'rules_referee', desc: '', args: []);
+    return Intl.message(
+      'دور الحكم',
+      name: 'rules_referee',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `سؤال له إجابات كثيرة، ويذكر المتسابقان الإجابات بالتناوب.\nلا يوجد وقت محدد، والحكم ينتقل إلى السؤال التالي متى شاء.\nلكل متسابق تجاوز واحد في السؤال: إن لم تكن لديه إجابة ينتقل الدور لمنافسه دون خطأ.\nلكل متسابق {strikes} أخطاء في السؤال، وبآخرها يفوز منافسه: {cleanPoints} إن لم يخطئ أبدًا، وإلا {points}.`
   String rules_what_do_you_know(
-    String strikes,
-    String cleanPoints,
-    String points,
-  ) {
+      String strikes, String cleanPoints, String points) {
     return Intl.message(
       'سؤال له إجابات كثيرة، ويذكر المتسابقان الإجابات بالتناوب.\nلا يوجد وقت محدد، والحكم ينتقل إلى السؤال التالي متى شاء.\nلكل متسابق تجاوز واحد في السؤال: إن لم تكن لديه إجابة ينتقل الدور لمنافسه دون خطأ.\nلكل متسابق $strikes أخطاء في السؤال، وبآخرها يفوز منافسه: $cleanPoints إن لم يخطئ أبدًا، وإلا $points.',
       name: 'rules_what_do_you_know',
@@ -2736,13 +3143,8 @@ class S {
   }
 
   /// `تُعرض بداية مشتركة بين عدة مواضع، ولا يوجد جرس: أي متسابق يجيب مباشرة بصوته.\nالإجابة الصحيحة خلال {fast} = {fastPoints}، وحتى {slow} = {slowPoints}، وبعدها لا يأخذ أحد شيئًا.\nلكل متسابق {strikes} أخطاء، وبعدها لا يحق له الإجابة.`
-  String rules_similar(
-    String fast,
-    String fastPoints,
-    String slow,
-    String slowPoints,
-    String strikes,
-  ) {
+  String rules_similar(String fast, String fastPoints, String slow,
+      String slowPoints, String strikes) {
     return Intl.message(
       'تُعرض بداية مشتركة بين عدة مواضع، ولا يوجد جرس: أي متسابق يجيب مباشرة بصوته.\nالإجابة الصحيحة خلال $fast = $fastPoints، وحتى $slow = $slowPoints، وبعدها لا يأخذ أحد شيئًا.\nلكل متسابق $strikes أخطاء، وبعدها لا يحق له الإجابة.',
       name: 'rules_similar',
@@ -2843,7 +3245,12 @@ class S {
 
   /// `زايِد`
   String get match_bid_raise {
-    return Intl.message('زايِد', name: 'match_bid_raise', desc: '', args: []);
+    return Intl.message(
+      'زايِد',
+      name: 'match_bid_raise',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `تفضّل، اسرد أنت`
@@ -2958,12 +3365,22 @@ class S {
 
   /// `توليد`
   String get setup_generate {
-    return Intl.message('توليد', name: 'setup_generate', desc: '', args: []);
+    return Intl.message(
+      'توليد',
+      name: 'setup_generate',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `سؤال جديد`
   String get setup_new {
-    return Intl.message('سؤال جديد', name: 'setup_new', desc: '', args: []);
+    return Intl.message(
+      'سؤال جديد',
+      name: 'setup_new',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `لا أسئلة محفوظة لهذه الفقرة. جرّب «توليد».`
@@ -3018,12 +3435,22 @@ class S {
 
   /// `نص السؤال`
   String get setup_prompt {
-    return Intl.message('نص السؤال', name: 'setup_prompt', desc: '', args: []);
+    return Intl.message(
+      'نص السؤال',
+      name: 'setup_prompt',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الإجابة`
   String get setup_answer {
-    return Intl.message('الإجابة', name: 'setup_answer', desc: '', args: []);
+    return Intl.message(
+      'الإجابة',
+      name: 'setup_answer',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `الآيات (سورة:آية، مفصولة بفواصل)`
@@ -3048,7 +3475,12 @@ class S {
 
   /// `إضافة`
   String get setup_add {
-    return Intl.message('إضافة', name: 'setup_add', desc: '', args: []);
+    return Intl.message(
+      'إضافة',
+      name: 'setup_add',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `صفحة {page}`
@@ -3073,27 +3505,52 @@ class S {
 
   /// `{n} ثانية`
   String rules_secs(String n) {
-    return Intl.message('$n ثانية', name: 'rules_secs', desc: '', args: [n]);
+    return Intl.message(
+      '$n ثانية',
+      name: 'rules_secs',
+      desc: '',
+      args: [n],
+    );
   }
 
   /// `دقيقة`
   String get rules_minute {
-    return Intl.message('دقيقة', name: 'rules_minute', desc: '', args: []);
+    return Intl.message(
+      'دقيقة',
+      name: 'rules_minute',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `نقطة`
   String get rules_point1 {
-    return Intl.message('نقطة', name: 'rules_point1', desc: '', args: []);
+    return Intl.message(
+      'نقطة',
+      name: 'rules_point1',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `نقطتان`
   String get rules_point2 {
-    return Intl.message('نقطتان', name: 'rules_point2', desc: '', args: []);
+    return Intl.message(
+      'نقطتان',
+      name: 'rules_point2',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `{n} نقاط`
   String rules_points(String n) {
-    return Intl.message('$n نقاط', name: 'rules_points', desc: '', args: [n]);
+    return Intl.message(
+      '$n نقاط',
+      name: 'rules_points',
+      desc: '',
+      args: [n],
+    );
   }
 
   /// `لا يوجد تعادل: إن تساوت النقاط في النهاية يُطرح سؤال حسم من الفقرة الأخيرة حتى يتقدم أحدهما.`
@@ -3128,12 +3585,22 @@ class S {
 
   /// `تجاوز`
   String get match_passed {
-    return Intl.message('تجاوز', name: 'match_passed', desc: '', args: []);
+    return Intl.message(
+      'تجاوز',
+      name: 'match_passed',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `السرد`
   String get round_sard {
-    return Intl.message('السرد', name: 'round_sard', desc: '', args: []);
+    return Intl.message(
+      'السرد',
+      name: 'round_sard',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `قل آخر كلمة في هذه الآية`
@@ -3238,12 +3705,22 @@ class S {
 
   /// `يمين`
   String get rl_right {
-    return Intl.message('يمين', name: 'rl_right', desc: '', args: []);
+    return Intl.message(
+      'يمين',
+      name: 'rl_right',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `يسار`
   String get rl_left {
-    return Intl.message('يسار', name: 'rl_left', desc: '', args: []);
+    return Intl.message(
+      'يسار',
+      name: 'rl_left',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `استعد: دورك ({count} بدايات، {time} لكل منها)`
@@ -3328,7 +3805,12 @@ class S {
 
   /// `خط المصحف`
   String get quran_font {
-    return Intl.message('خط المصحف', name: 'quran_font', desc: '', args: []);
+    return Intl.message(
+      'خط المصحف',
+      name: 'quran_font',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `خط حفص (مجمع الملك فهد)`
@@ -3353,17 +3835,32 @@ class S {
 
   /// `الأميري`
   String get font_amiri {
-    return Intl.message('الأميري', name: 'font_amiri', desc: '', args: []);
+    return Intl.message(
+      'الأميري',
+      name: 'font_amiri',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `نوتو نسخ`
   String get font_noto {
-    return Intl.message('نوتو نسخ', name: 'font_noto', desc: '', args: []);
+    return Intl.message(
+      'نوتو نسخ',
+      name: 'font_noto',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `عام`
   String get group_default {
-    return Intl.message('عام', name: 'group_default', desc: '', args: []);
+    return Intl.message(
+      'عام',
+      name: 'group_default',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `بدون مجموعة`
@@ -3388,12 +3885,22 @@ class S {
 
   /// `مجموعة جديدة`
   String get group_new {
-    return Intl.message('مجموعة جديدة', name: 'group_new', desc: '', args: []);
+    return Intl.message(
+      'مجموعة جديدة',
+      name: 'group_new',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `اسم المجموعة`
   String get group_name {
-    return Intl.message('اسم المجموعة', name: 'group_name', desc: '', args: []);
+    return Intl.message(
+      'اسم المجموعة',
+      name: 'group_name',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `مثل: ختمة التهجد`
@@ -3408,7 +3915,12 @@ class S {
 
   /// `إنشاء`
   String get group_create {
-    return Intl.message('إنشاء', name: 'group_create', desc: '', args: []);
+    return Intl.message(
+      'إنشاء',
+      name: 'group_create',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `إنشاء وحفظ`
@@ -3533,7 +4045,12 @@ class S {
 
   /// `حفظ`
   String get setup_count_save {
-    return Intl.message('حفظ', name: 'setup_count_save', desc: '', args: []);
+    return Intl.message(
+      'حفظ',
+      name: 'setup_count_save',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `أقصى مزايدة: {max}`
@@ -3558,7 +4075,12 @@ class S {
 
   /// `نقطة`
   String get match_bid_points1 {
-    return Intl.message('نقطة', name: 'match_bid_points1', desc: '', args: []);
+    return Intl.message(
+      'نقطة',
+      name: 'match_bid_points1',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `نقطتين`
