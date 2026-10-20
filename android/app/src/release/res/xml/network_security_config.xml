@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Release builds for testing against the local match server on the Wi-Fi
+     (http/ws on the Mac's address only). Remove the domain-config before a
+     store release, when the server moves to https. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">192.168.1.21</domain>
+    </domain-config>
+</network-security-config>

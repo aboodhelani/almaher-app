@@ -1,0 +1,995 @@
+{
+  "app_name": "Al-Maher",
+  "language": "Language",
+  "arabic": "العربية",
+  "english": "English",
+  "quran": "The Holy Quran",
+  "surahs_index": "Surahs",
+  "page": "Page",
+  "juz": "Juz",
+  "ayahs_count": "{count} ayahs",
+  "@ayahs_count": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "meccan": "Meccan",
+  "medinan": "Medinan",
+  "failed_to_load_quran": "Could not load the Quran",
+  "retry": "Retry",
+  "settings": "Settings",
+  "appearance": "Appearance",
+  "dark_mode": "Dark mode",
+  "dark_mode_subtitle": "Black background, white text",
+  "search": "Search",
+  "search_hint": "Search a surah or ayah",
+  "search_start_hint": "Type a surah name or words from an ayah.\nAdd tashkeel to see full matches.",
+  "search_surahs": "Surahs",
+  "search_full_match": "Full match",
+  "search_partial_match": "Partial match",
+  "search_no_results": "No results",
+  "search_failed": "Search failed",
+  "search_all_surahs": "All surahs",
+  "search_in_surah_hint": "Ayah number or words",
+  "search_in_surah_start_hint": "Type an ayah number to go to it,\nor words to search inside this surah.",
+  "search_ayah": "Ayah",
+  "tajweed": "Tajweed",
+  "tajweed_colors": "Tajweed colours",
+  "tajweed_colors_subtitle": "Colour letters in the mushaf by tajweed rule",
+  "tajweed_guide": "Tajweed colour guide",
+  "tajweed_guide_subtitle": "What each colour means, its length and an example",
+  "tajweed_details": "Tajweed rules",
+  "tajweed_no_rules": "No coloured rules in this ayah",
+  "tajweed_unavailable": "Could not load tajweed rules",
+  "tajweed_position": "Where",
+  "tajweed_letters": "Letters",
+  "tajweed_duration": "Length",
+  "tajweed_example": "Example",
+  "ayah_label": "Ayah",
+  "similar_ayahs": "Similar ayahs",
+  "similar_colors": "Colour similar ayahs",
+  "similar_colors_subtitle": "Mark repeated ayahs and phrases shared between ayahs",
+  "similar_full": "Full match",
+  "similar_partial": "Partial match",
+  "similar_min_words": "Minimum shared words",
+  "similar_min_words_subtitle": "Consecutive shared words needed for a partial match",
+  "similar_none": "No ayah shares {count} or more consecutive words with it",
+  "@similar_none": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "similar_failed": "Could not find similar ayahs",
+  "similar_words": "{count} words",
+  "@similar_words": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "home_read": "Read the Quran",
+  "home_read_subtitle": "Mushaf with tajweed, similar ayahs and search",
+  "home_play": "Competition",
+  "home_play_subtitle": "Challenge another hafiz, with a referee",
+  "match_create": "Create match",
+  "match_join": "Join match",
+  "match_your_name": "Your name",
+  "match_code": "Match code",
+  "match_mode": "How you play",
+  "match_mode_same_room": "Same room",
+  "match_mode_remote": "Remote",
+  "match_your_role": "Your role",
+  "match_role_player1": "Player 1",
+  "match_role_player2": "Player 2",
+  "match_role_referee": "Referee",
+  "match_waiting_seat": "Waiting to join",
+  "match_code_copied": "Match code copied",
+  "match_you_are": "You are {name}",
+  "@match_you_are": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_remote_media_soon": "Live audio/video between players comes in the next step",
+  "match_waiting_players": "Waiting for both players to join with the code",
+  "match_players_ready": "Both players are ready",
+  "match_start_ayah_number": "Start the Ayah Number round",
+  "match_wait_referee_start": "Waiting for the referee to start",
+  "match_round_ayah_number": "Ayah Number",
+  "match_question_of": "Question {current} of {total}",
+  "@match_question_of": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "match_ayah_number_prompt": "What is this ayah's number in its surah?",
+  "match_answered": "Answered",
+  "match_waiting_answer": "…",
+  "match_got_point": "Point",
+  "match_your_answer": "Ayah number",
+  "match_send": "Send",
+  "match_wait_reveal": "Sent, waiting for the reveal",
+  "match_wait_referee_next": "Waiting for the referee's next question",
+  "match_reveal": "Reveal answers",
+  "match_next": "Next question",
+  "match_finish": "Finish match",
+  "match_adjust_scores": "Adjust scores",
+  "match_draw": "Draw",
+  "match_winner": "Winner: {name}",
+  "@match_winner": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_new": "New match",
+  "match_leave": "Leave",
+  "match_err_unreachable": "Could not reach the server",
+  "match_err_not_found": "No match with this code",
+  "match_err_role_taken": "This role is taken",
+  "match_err_name": "Enter your name",
+  "match_err_players_missing": "Both players have not joined yet",
+  "match_err_time_up": "Time is up",
+  "match_err_already_answered": "You already answered",
+  "match_err_invalid_answer": "Invalid number",
+  "match_err_generic": "Something went wrong, try again",
+  "match_role_player": "Player",
+  "match_id_optional": "Match ID (optional)",
+  "match_id_hint_set": "You'll enter exactly this match; it's created with this ID if it doesn't exist",
+  "match_id_hint_empty": "Leave empty and the server will find you an open match",
+  "match_enter_by_id": "Enter match",
+  "match_find": "Find me a match",
+  "match_err_full": "This match already has two players",
+  "match_err_invalid_code": "Match ID: 3–20 letters or digits, no spaces",
+  "match_err_code_taken": "This ID is used by a live match",
+  "match_err_closed": "Your previous match has ended or was closed",
+  "match_answered_first": "First",
+  "match_seconds": "{value}s",
+  "@match_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "round_what_do_you_know": "What do you know",
+  "round_ayah_number": "Ayah count",
+  "round_auction": "Auction",
+  "round_similar": "Similar ayahs",
+  "round_buzzer": "Buzzer",
+  "round_hint_what_do_you_know": "Answer in turns: {strikes} mistakes and one pass each",
+  "round_hint_ayah_number": "This is the first ayah of a page: how many ayahs are on it?",
+  "round_hint_auction": "Bid openly on how many you can name; the highest bidder recites",
+  "round_hint_similar": "Answer aloud if you know the shared phrase",
+  "round_hint_buzzer": "First to buzz answers",
+  "match_progress": "Round {round}/{rounds} · Question {q}/{qs} · ({n}/{total})",
+  "match_auction_total": "Total: {count}",
+  "match_page_answer": "Page {page} ({surah}) · {count}",
+  "match_answer_label": "Answer",
+  "match_your_bid": "Your bid",
+  "match_bid_sent": "Your bid: {count}, waiting for the referee",
+  "match_you_recite": "You recite now: {count}",
+  "match_other_recites": "{name} recites now: {count}",
+  "match_your_turn": "Your turn",
+  "match_turn_of": "{name}'s turn",
+  "match_press_buzzer": "Press the buzzer to answer",
+  "match_you_buzzed": "Answer now!",
+  "match_other_buzzed": "{name} buzzed",
+  "match_close_bids": "Close bidding",
+  "match_recite_ok": "Succeeded",
+  "match_recite_fail": "Failed",
+  "match_correct": "Correct",
+  "match_strike": "Strike",
+  "match_wrong": "Wrong",
+  "match_waiting_buzz": "Waiting for a buzz",
+  "match_manual_point": "End question by hand",
+  "match_no_point": "No point",
+  "match_answer_key": "Answer key ({said} of {total})",
+  "match_start": "Start the match ({n} questions)",
+  "@match_progress": {
+    "placeholders": {
+      "round": {
+        "type": "String"
+      },
+      "rounds": {
+        "type": "String"
+      },
+      "q": {
+        "type": "String"
+      },
+      "qs": {
+        "type": "String"
+      },
+      "n": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_auction_total": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_page_answer": {
+    "placeholders": {
+      "surah": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_you_recite": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_other_recites": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_bid_sent": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_turn_of": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_other_buzzed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_answer_key": {
+    "placeholders": {
+      "said": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "match_locked_out": "Wrong — the other player's chance",
+  "match_your_chance": "Your opponent was wrong — answer now",
+  "match_handed_over": "{wrong} was wrong, {name} answers now",
+  "match_worth": "Worth {count} points now",
+  "@match_handed_over": {
+    "placeholders": {
+      "wrong": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_worth": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "splash_tagline": "Your companion for reciting and revising the Quran",
+  "home_greeting": "Assalamu alaikum",
+  "home_continue": "Continue reading · page {page}",
+  "@home_continue": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "home_start_reading": "Start reading",
+  "home_play_now": "Play now",
+  "home_rounds": "Seven rounds · 28 questions",
+  "home_more": "More",
+  "home_tajweed_guide": "Tajweed guide",
+  "home_settings": "Settings",
+  "surah_filter_hint": "Surah name or number",
+  "surah_page_short": "p. {page}",
+  "@surah_page_short": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "surah_none": "No surah by that name",
+  "light_mode": "Light mode",
+  "lobby_title": "Ready for the challenge?",
+  "lobby_subtitle": "Pick your role and start the match",
+  "match_role_player_desc": "Answer and compete for points",
+  "match_role_referee_desc": "Run the questions and judge",
+  "match_mode_same_room_desc": "Everyone in one place",
+  "match_mode_remote_desc": "Each from their own device",
+  "match_name_hint": "e.g. Abdullah",
+  "match_id_placeholder": "Match ID",
+  "match_you_short": "You",
+  "match_vs": "VS",
+  "match_answering_now": "Answering",
+  "match_round_of": "Round {round} of {rounds} · Question {q} of {qs}",
+  "@match_round_of": {
+    "placeholders": {
+      "round": {
+        "type": "String"
+      },
+      "rounds": {
+        "type": "String"
+      },
+      "q": {
+        "type": "String"
+      },
+      "qs": {
+        "type": "String"
+      }
+    }
+  },
+  "match_question_done": "Done",
+  "match_points_chip": "{count} pts",
+  "@match_points_chip": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "referee_tools": "Referee tools",
+  "referee_tools_hint": "Manual point and score fixes",
+  "match_share_code": "Share the code so others join this match",
+  "match_seats": "Seats",
+  "match_final_score": "Final score",
+  "match_tap_to_copy": "Tap to copy",
+  "match_winner_chip": "Winner",
+  "match_replace": "Alternative question",
+  "match_replace_title": "Swap the question?",
+  "match_replace_body": "This question will be replaced by another from the same round, marked as an alternative for the players. Any points it gave are taken back.",
+  "match_replace_do": "Swap",
+  "match_cancel": "Cancel",
+  "match_replaced_chip": "Alternative",
+  "match_listen_question": "Listen to the referee",
+  "match_listen_hint": "The question appears once it's decided",
+  "match_no_timer": "No timer",
+  "search_tashkeel_keyboard": "Tashkeel keyboard",
+  "saved_pages": "Saved pages",
+  "saved_pages_empty": "No saved pages yet",
+  "saved_pages_empty_hint": "Tap the save button above a mushaf page to come back to it later",
+  "save_page": "Save page",
+  "page_saved": "Saved page {page}",
+  "@page_saved": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "page_unsaved": "Removed page {page} from saved",
+  "@page_unsaved": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "undo": "Undo",
+  "saved_count": "{count} saved",
+  "@saved_count": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "reader_more": "More",
+  "auth_login_title": "Sign in",
+  "auth_register_title": "New account",
+  "auth_gate_title": "The competition needs an account",
+  "auth_gate_subtitle": "Sign in or create an account to play and keep your results. Reading is open to everyone.",
+  "auth_email": "Email",
+  "auth_password": "Password",
+  "auth_name": "Name shown to opponents",
+  "auth_login": "Sign in",
+  "auth_register": "Create account",
+  "auth_to_register": "No account? Create one",
+  "auth_to_login": "Have an account? Sign in",
+  "auth_err_invalid_email": "Invalid email",
+  "auth_err_weak_password": "Password must be at least 6 characters",
+  "auth_err_name": "Enter a name of at least 2 letters",
+  "auth_err_email_taken": "This email is registered — sign in",
+  "auth_err_invalid_credentials": "Wrong email or password",
+  "auth_err_generic": "Something went wrong, try again",
+  "profile_title": "My account",
+  "profile_matches": "Matches",
+  "profile_wins": "Wins",
+  "profile_draws": "Draws",
+  "profile_losses": "Losses",
+  "profile_points": "Points",
+  "profile_win_rate": "Win rate {rate}%",
+  "@profile_win_rate": {
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "profile_recent": "Recent matches",
+  "profile_no_matches": "No matches yet",
+  "profile_vs": "vs {name}",
+  "@profile_vs": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "leaderboard": "Leaderboard",
+  "leaderboard_empty": "No results yet — be the first",
+  "logout": "Sign out",
+  "playing_as": "Playing as {name}",
+  "@playing_as": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_err_login_required": "Sign in to play",
+  "match_err_already_player": "You're a player in this match",
+  "match_err_already_referee": "You're the referee in this match",
+  "you_label": "(you)",
+  "settings_competition": "Competition",
+  "game_sounds": "Competition sounds",
+  "game_sounds_subtitle": "Buzzer, right and wrong answers, last seconds",
+  "media_connecting": "Connecting audio and video…",
+  "media_failed": "Couldn't connect audio and video",
+  "media_retry": "Retry",
+  "media_mic": "Microphone",
+  "media_camera": "Camera",
+  "media_not_here": "Not here yet",
+  "library": "Tafsir & recitations",
+  "library_subtitle": "Download a tafsir, translation or reciter to use offline",
+  "library_tafsirs": "Tafsirs",
+  "library_translations": "Translations",
+  "library_reciters": "Reciters",
+  "library_bundled": "Built in",
+  "library_downloaded": "Downloaded",
+  "library_download": "Download",
+  "library_delete": "Delete",
+  "library_in_use": "In use",
+  "library_use": "Use",
+  "library_offline": "Couldn't load the list. Check your internet connection.",
+  "library_download_failed": "Download failed. Try again.",
+  "library_search": "Search by name or language",
+  "library_surahs_count": "{count} surahs downloaded",
+  "@library_surahs_count": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "library_download_all": "Download all",
+  "library_delete_confirm": "Delete {name}?",
+  "@library_delete_confirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tafsir": "Tafsir",
+  "translation": "Translation",
+  "recitation": "Listen",
+  "recitation_play_from": "Listen from this ayah",
+  "recitation_download_surah": "Download the surah to listen",
+  "recitation_downloading": "Downloading {percent}",
+  "@recitation_downloading": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "recitation_reciter": "Reciter",
+  "more_downloads": "More…",
+  "text_unavailable": "Couldn't show the text",
+  "settings_reading": "Reading & listening",
+  "sheet_tab_similar": "Similar & tajweed",
+  "sheet_tab_tafsir": "Tafsir & translation",
+  "delete_account": "Delete account",
+  "delete_account_body": "Your account will be deleted permanently. Your past matches stay in the history without your name. Enter your password to confirm.",
+  "delete_account_confirm": "Delete permanently",
+  "delete_account_done": "Your account was deleted",
+  "cancel": "Cancel",
+  "about": "About & privacy",
+  "about_subtitle": "Privacy policy and content sources",
+  "about_tagline": "A mushaf for reading and tajweed, and a competition for huffaz",
+  "about_version": "Version {version}",
+  "@about_version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "privacy_title": "Privacy policy",
+  "privacy_reading_title": "Reading needs no account",
+  "privacy_reading_body": "The mushaf, search, tajweed, tafsirs and recitations work without signing up. Saved pages, your last page and your downloads stay on your device only.",
+  "privacy_account_title": "Competition account",
+  "privacy_account_body": "To play we keep your email, your name, your password (hashed) and your match results, for your stats and the leaderboard. We never sell or share your data.",
+  "privacy_media_title": "Audio and video",
+  "privacy_media_body": "In remote matches your microphone and camera stream live to the other participants only when you turn them on. Nothing is recorded or stored.",
+  "privacy_delete_title": "Deleting your data",
+  "privacy_delete_body": "You can delete your account at any time from your profile. Your email, name and password are removed; match results stay without your name.",
+  "sources_title": "Content sources",
+  "sources_body": "Quran text: Tanzil project (tanzil.net), Hafs.\nTafsirs, translations and recitations: alquran.cloud and islamic.network.\nAt-Tafsir Al-Muyassar: King Fahd Complex for the Printing of the Holy Quran.\nFonts: Amiri Quran and IBM Plex Sans Arabic, SIL Open Font License.",
+  "rules_title": "How to play",
+  "rules_overview_title": "The match",
+  "rules_overview": "Two players and a referee; {rounds} rounds of {perRound} questions each.\nThe referee prepares the match, choosing its questions or leaving them random, then publishes it so players can enter with its ID.\nPlay in the same room, or remotely with audio and video.",
+  "rules_players": "For players",
+  "rules_referee": "Referee",
+  "rules_what_do_you_know": "A question with many answers; players name them in turns.\nNo timer: the referee moves on whenever ready.\nEach player has one pass per question: with no answer, the turn goes to the opponent without a strike.\nEach player has {strikes} mistakes per question; the last one makes the opponent win: {cleanPoints} with no mistakes of their own, otherwise {points}.",
+  "referee_what_do_you_know": "Read the question; tap Correct for each right answer or Wrong for a mistake, and the turn passes automatically. If the player asks to pass, tap Pass (once per player). Move on when you see fit.",
+  "rules_ayah_number": "The first ayah of a page is shown; each player secretly writes how many ayahs the page has, within {time}.\nThe exact count wins {points}, otherwise the closest.\nIf both are exact, the faster one scores; if both wrote the same wrong number, nobody scores.",
+  "referee_ayah_number": "Read the ayah aloud; once both have written their count, tap Reveal answers.",
+  "rules_auction": "A category with a known number of ayahs, shown to both; bids are open and in turn: one player opens (at random on the first question, then alternating) and the other answers.\nEvery bid must beat the last one and restarts the clock ({bid}); bidding the full total ends the bidding.\nA player can say \"go ahead\" and the highest bidder recites; the same happens when time runs out.\nThe bidder names them within {recite}: completing it scores 1 point under 20, 2 from 20, 3 from 30, and so on; otherwise the opponent scores {points}.",
+  "referee_auction": "Announce the category and follow the bids; you can end them with Close bidding. Then tap Correct if the player completes the bid, or Wrong.",
+  "rules_similar": "An opening shared by several places is shown; there is no buzzer: either player answers aloud.\nA correct answer within {fast} is worth {fastPoints}, within {slow} {slowPoints}, after that nobody scores.\nEach player has {strikes} mistakes; after that they may not answer.",
+  "referee_similar": "Read the opening; when one of them answers, tap Correct or Wrong under their name.",
+  "rules_buzzer": "The question is hidden from players and audience; the referee reads it aloud.\nThe first to press the buzzer within {time} answers; a correct answer is worth {points}.\nIf wrong, the full question is shown to everyone and the opponent answers; if they are wrong too, nobody scores.",
+  "referee_buzzer": "Read the question clearly (only you can see it), then judge whoever buzzed first with Correct or Wrong.",
+  "rules_referee_general_title": "For the referee, every round",
+  "rules_referee_general": "You can always tap Alternative question to swap it; players see it is an alternative, and points already given for it are taken back.\nYou can always tap Next question; if it wasn't decided, nobody scores.\nYou start the match once both players are in.",
+  "match_bid_none": "No bids yet: open the bidding",
+  "match_bid_high": "Highest bid: {bid} by {name}",
+  "@match_bid_high": {
+    "placeholders": {
+      "bid": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_you_high": "Your bid is highest: {bid}, waiting for your opponent",
+  "@match_bid_you_high": {
+    "placeholders": {
+      "bid": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_more_than": "More than {n}",
+  "@match_bid_more_than": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_raise": "Bid",
+  "match_bid_pass": "Go ahead, you recite",
+  "match_bid_hint": "Each bid restarts the one-minute clock; when it runs out the highest bidder recites",
+  "match_similar_speak": "No buzzer: answer aloud right away",
+  "match_similar_out": "You used your three tries",
+  "match_similar_referee": "Judge whoever answered",
+  "match_tiebreak_chip": "Decider",
+  "setup_title": "Prepare the match",
+  "setup_draft_note": "Not published yet: players can't enter until you publish. Choose each round's questions, or leave them to be picked at random.",
+  "setup_count": "{n} of {total}",
+  "@setup_count": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_random_rest": "The rest at random",
+  "setup_from_bank": "From the bank",
+  "setup_generate": "Generate",
+  "setup_new": "New question",
+  "setup_bank_empty": "No saved questions for this round. Try Generate.",
+  "setup_add_selected": "Add ({n})",
+  "@setup_add_selected": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_full": "This round is full",
+  "setup_publish": "Publish the match",
+  "setup_publish_hint": "Once published, players can enter with the match ID",
+  "setup_prompt": "Question",
+  "setup_answer": "Answer",
+  "setup_refs": "Ayahs (surah:ayah, comma separated)",
+  "setup_page": "Page number (1–604)",
+  "setup_add": "Add",
+  "setup_page_label": "Page {page}",
+  "@setup_page_label": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "match_err_not_published": "The referee hasn't published this match yet",
+  "rules_secs": "{n} seconds",
+  "@rules_secs": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "rules_minute": "a minute",
+  "rules_point1": "1 point",
+  "rules_point2": "2 points",
+  "rules_points": "{n} points",
+  "@rules_points": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_overview": {
+    "placeholders": {
+      "rounds": {
+        "type": "String"
+      },
+      "perRound": {
+        "type": "String"
+      }
+    }
+  },
+  "rules_overview_tiebreak": "No draws: if the scores are level at the end, decider questions from the last round are played until one leads.",
+  "@rules_what_do_you_know": {
+    "placeholders": {
+      "strikes": {
+        "type": "String"
+      },
+      "cleanPoints": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_ayah_number": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_auction": {
+    "placeholders": {
+      "bid": {
+        "type": "String"
+      },
+      "recite": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_similar": {
+    "placeholders": {
+      "fast": {
+        "type": "String"
+      },
+      "fastPoints": {
+        "type": "String"
+      },
+      "slow": {
+        "type": "String"
+      },
+      "slowPoints": {
+        "type": "String"
+      },
+      "strikes": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_buzzer": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_start": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "@round_hint_what_do_you_know": {
+    "placeholders": {
+      "strikes": {
+        "type": "String"
+      }
+    }
+  },
+  "match_pass_turn": "Pass (once)",
+  "match_pass_for": "Pass for {name}",
+  "@match_pass_for": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_passed": "Passed",
+  "round_sard": "Ayah ending",
+  "round_hint_sard": "Say this ayah's last word",
+  "rules_sard": "The first word of an ayah is shown; if other ayahs start the same way, two or more words are shown until it is unique.\nPlayers say the ayah's last word aloud; whoever gets it right scores {points}.\nEach player has {strikes} tries; after {time} nobody scores.",
+  "@rules_sard": {
+    "placeholders": {
+      "points": {
+        "type": "String"
+      },
+      "strikes": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "referee_sard": "Read the ayah's opening; when one of them answers, tap Correct or Wrong under their name.",
+  "match_sard_speak": "No buzzer: say the ayah's last word aloud",
+  "match_sard_out": "You used your tries",
+  "setup_sard_ayah": "Ayah (surah:ayah)",
+  "round_right_left": "Right or left",
+  "round_hint_right_left": "Is this ayah on the right page or the left?",
+  "rules_right_left": "Each player has a turn: {count} ayah openings appear one after another, none shared with another ayah.\nWithin {time}, the player says whether the ayah is on the right page or the left; if time runs out it doesn't count.\nPlayers only see their result when their openings are done, then the opponent takes a turn.\nMore right answers wins {points}; a tie means nobody scores.",
+  "@rules_right_left": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "referee_right_left": "Tap Start turn for each player when they're ready; answers are scored from their phone, and you see each opening's correct side.",
+  "rl_right": "Right",
+  "rl_left": "Left",
+  "rl_get_ready": "Get ready: your turn ({count} openings, {time} each)",
+  "@rl_get_ready": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_waiting_run": "{name}'s turn, waiting for the referee",
+  "@rl_waiting_run": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_running_other": "{name}'s turn: {n} of {total}",
+  "@rl_running_other": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "n": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_progress": "{n} of {total}",
+  "@rl_progress": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_start_run": "Start {name}'s turn",
+  "@rl_start_run": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_key": "Answer: {side} · page {page} · {surah} {ayah}",
+  "@rl_key": {
+    "placeholders": {
+      "side": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      },
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_result": "{name}: {right} right of {total}",
+  "@rl_result": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "right": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_rl_ayahs": "Ayahs (an even number, usually 12)",
+  "quran_font": "Mushaf font",
+  "font_hafs": "Hafs (King Fahd Complex)",
+  "font_hafs_note": "As in the printed mushaf",
+  "font_amiri": "Amiri Quran",
+  "font_noto": "Noto Naskh",
+  "group_default": "General",
+  "group_default_note": "No group",
+  "group_save_title": "Save page {page} in",
+  "@group_save_title": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "group_new": "New group",
+  "group_name": "Group name",
+  "group_name_hint": "e.g. Tahajjud khatmah",
+  "group_create": "Create",
+  "group_create_save": "Create and save",
+  "group_delete": "Delete group",
+  "group_delete_body": "Pages in “{name}” move to General.",
+  "@group_delete_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "group_empty": "No pages in this group yet",
+  "page_saved_in": "Page {page} saved in “{group}”",
+  "@page_saved_in": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      },
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_your_open": "You open the bidding",
+  "match_bid_wait_open": "{name} opens the bidding",
+  "@match_bid_wait_open": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_rounds_title": "Rounds and question counts",
+  "setup_rounds_hint": "Pick at least one round and how many questions each (4 per round by default).",
+  "setup_rounds_total": "Total: {n}",
+  "match_err_no_rounds": "Pick at least one round",
+  "match_err_too_many": "Too many questions",
+  "@setup_rounds_total": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_count_save": "Save",
+  "match_bid_max": "Highest possible bid: {max}",
+  "@match_bid_max": {
+    "placeholders": {
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_worth": "A bid of {bid} is worth {points} if you complete it",
+  "@match_bid_worth": {
+    "placeholders": {
+      "bid": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_points1": "1 point",
+  "match_bid_points2": "2 points",
+  "match_bid_points": "{n} points",
+  "@match_bid_points": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  }
+}

@@ -1,0 +1,995 @@
+{
+  "app_name": "الماهر",
+  "language": "اللغة",
+  "arabic": "العربية",
+  "english": "English",
+  "quran": "القرآن الكريم",
+  "surahs_index": "فهرس السور",
+  "page": "صفحة",
+  "juz": "الجزء",
+  "ayahs_count": "{count} آية",
+  "@ayahs_count": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "meccan": "مكية",
+  "medinan": "مدنية",
+  "failed_to_load_quran": "تعذر تحميل المصحف",
+  "retry": "إعادة المحاولة",
+  "settings": "الإعدادات",
+  "appearance": "المظهر",
+  "dark_mode": "الوضع الليلي",
+  "dark_mode_subtitle": "خلفية سوداء ونص أبيض",
+  "search": "بحث",
+  "search_hint": "ابحث عن سورة أو آية",
+  "search_start_hint": "اكتب اسم سورة أو كلمات من آية.\nاكتب بالتشكيل لتظهر المطابقة التامة.",
+  "search_surahs": "السور",
+  "search_full_match": "مطابقة تامة",
+  "search_partial_match": "مطابقة جزئية",
+  "search_no_results": "لا توجد نتائج",
+  "search_failed": "تعذر البحث",
+  "search_all_surahs": "كل السور",
+  "search_in_surah_hint": "رقم الآية أو كلمات منها",
+  "search_in_surah_start_hint": "اكتب رقم آية للانتقال إليها،\nأو كلمات للبحث داخل هذه السورة.",
+  "search_ayah": "الآية",
+  "tajweed": "التجويد",
+  "tajweed_colors": "تلوين أحكام التجويد",
+  "tajweed_colors_subtitle": "تلوين الحروف في المصحف حسب أحكام التجويد",
+  "tajweed_guide": "دليل ألوان التجويد",
+  "tajweed_guide_subtitle": "معنى كل لون ومدته ومثال عليه",
+  "tajweed_details": "أحكام التجويد",
+  "tajweed_no_rules": "لا توجد أحكام ملونة في هذه الآية",
+  "tajweed_unavailable": "تعذر تحميل أحكام التجويد",
+  "tajweed_position": "الموضع",
+  "tajweed_letters": "الحرف",
+  "tajweed_duration": "المدة",
+  "tajweed_example": "مثال",
+  "ayah_label": "آية",
+  "similar_ayahs": "الآيات المتشابهة",
+  "similar_colors": "تلوين الآيات المتشابهة",
+  "similar_colors_subtitle": "تمييز الآيات المكررة والعبارات المشتركة بين الآيات",
+  "similar_full": "تطابق تام",
+  "similar_partial": "تشابه جزئي",
+  "similar_min_words": "أقل عدد كلمات للتشابه",
+  "similar_min_words_subtitle": "عدد الكلمات المتتالية المشتركة ليعد تشابهًا جزئيًا",
+  "similar_none": "لا توجد آية تشترك معها في {count} كلمات متتالية أو أكثر",
+  "@similar_none": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "similar_failed": "تعذر البحث عن الآيات المتشابهة",
+  "similar_words": "{count} كلمات",
+  "@similar_words": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "home_read": "قراءة القرآن",
+  "home_read_subtitle": "المصحف مع التجويد والمتشابهات والبحث",
+  "home_play": "المسابقة",
+  "home_play_subtitle": "تحدَّ حافظًا آخر بوجود حكم",
+  "match_create": "إنشاء مباراة",
+  "match_join": "الانضمام لمباراة",
+  "match_your_name": "اسمك",
+  "match_code": "رمز المباراة",
+  "match_mode": "طريقة اللعب",
+  "match_mode_same_room": "في نفس المكان",
+  "match_mode_remote": "عن بُعد",
+  "match_your_role": "دورك",
+  "match_role_player1": "المتسابق الأول",
+  "match_role_player2": "المتسابق الثاني",
+  "match_role_referee": "الحكم",
+  "match_waiting_seat": "بانتظار الانضمام",
+  "match_code_copied": "تم نسخ رمز المباراة",
+  "match_you_are": "أنت {name}",
+  "@match_you_are": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_remote_media_soon": "الصوت والصورة بين المتسابقين في المرحلة القادمة",
+  "match_waiting_players": "بانتظار انضمام المتسابقَين بالرمز",
+  "match_players_ready": "المتسابقان جاهزان",
+  "match_start_ayah_number": "ابدأ فقرة رقم الآيات",
+  "match_wait_referee_start": "بانتظار الحكم ليبدأ",
+  "match_round_ayah_number": "رقم الآيات",
+  "match_question_of": "السؤال {current} من {total}",
+  "@match_question_of": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "match_ayah_number_prompt": "ما رقم هذه الآية في سورتها؟",
+  "match_answered": "أجاب",
+  "match_waiting_answer": "…",
+  "match_got_point": "نقطة",
+  "match_your_answer": "رقم الآية",
+  "match_send": "إرسال",
+  "match_wait_reveal": "تم الإرسال، بانتظار كشف الإجابات",
+  "match_wait_referee_next": "بانتظار الحكم للسؤال التالي",
+  "match_reveal": "اكشف الإجابات",
+  "match_next": "السؤال التالي",
+  "match_finish": "إنهاء المباراة",
+  "match_adjust_scores": "تعديل النقاط",
+  "match_draw": "تعادل",
+  "match_winner": "الفائز: {name}",
+  "@match_winner": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_new": "مباراة جديدة",
+  "match_leave": "خروج",
+  "match_err_unreachable": "تعذر الاتصال بالخادم",
+  "match_err_not_found": "لا توجد مباراة بهذا الرمز",
+  "match_err_role_taken": "هذا الدور مأخوذ",
+  "match_err_name": "اكتب اسمك",
+  "match_err_players_missing": "لم ينضم المتسابقان بعد",
+  "match_err_time_up": "انتهى الوقت",
+  "match_err_already_answered": "أرسلت إجابتك بالفعل",
+  "match_err_invalid_answer": "رقم غير صحيح",
+  "match_err_generic": "حدث خطأ، حاول مرة أخرى",
+  "match_role_player": "متسابق",
+  "match_id_optional": "رقم المباراة (اختياري)",
+  "match_id_hint_set": "ستدخل هذه المباراة بالضبط، وتُنشأ بهذا الرقم إن لم تكن موجودة",
+  "match_id_hint_empty": "اتركه فارغًا ليختار الخادم لك مباراة مفتوحة",
+  "match_enter_by_id": "دخول المباراة",
+  "match_find": "ابحث لي عن مباراة",
+  "match_err_full": "المباراة مكتملة بالمتسابقين",
+  "match_err_invalid_code": "رقم المباراة من ٣ إلى ٢٠ حرفًا أو رقمًا بلا مسافات",
+  "match_err_code_taken": "هذا الرقم مستخدم لمباراة جارية",
+  "match_err_closed": "انتهت المباراة السابقة أو أُغلقت",
+  "match_answered_first": "الأسرع",
+  "match_seconds": "{value} ث",
+  "@match_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "round_what_do_you_know": "ماذا تعرف",
+  "round_ayah_number": "رقم الآيات",
+  "round_auction": "المزاد",
+  "round_similar": "المتشابهات",
+  "round_buzzer": "الجرس",
+  "round_hint_what_do_you_know": "أجيبا بالتناوب: لكل متسابق {strikes} أخطاء وتجاوز واحد",
+  "round_hint_ayah_number": "هذه أول آية في الصفحة: كم آية في هذه الصفحة؟",
+  "round_hint_auction": "زايِد علنًا على عدد ما تستطيع ذكره، وصاحب المزايدة الأعلى يسرد",
+  "round_hint_similar": "أجب مباشرة بصوتك إن عرفت العبارة المشتركة",
+  "round_hint_buzzer": "أول من يضغط الجرس يجيب",
+  "match_progress": "الفقرة {round} من {rounds} · السؤال {q} من {qs} · ({n}/{total})",
+  "match_auction_total": "العدد الكلي: {count}",
+  "match_page_answer": "صفحة {page} ({surah}) · {count}",
+  "match_answer_label": "الإجابة",
+  "match_your_bid": "مزايدتك",
+  "match_bid_sent": "مزايدتك: {count}، بانتظار الحكم",
+  "match_you_recite": "أنت تسرد الآن: {count}",
+  "match_other_recites": "{name} يسرد الآن: {count}",
+  "match_your_turn": "دورك الآن",
+  "match_turn_of": "دور {name}",
+  "match_press_buzzer": "اضغط الجرس للإجابة",
+  "match_you_buzzed": "أجب الآن!",
+  "match_other_buzzed": "{name} ضغط الجرس",
+  "match_close_bids": "أغلق المزايدة",
+  "match_recite_ok": "نجح",
+  "match_recite_fail": "لم ينجح",
+  "match_correct": "صحيح",
+  "match_strike": "خطأ",
+  "match_wrong": "خطأ",
+  "match_waiting_buzz": "بانتظار من يضغط الجرس",
+  "match_manual_point": "إنهاء السؤال يدويًا",
+  "match_no_point": "بلا نقطة",
+  "match_answer_key": "مفتاح الإجابة ({said} من {total})",
+  "match_start": "ابدأ المباراة ({n} سؤالًا)",
+  "@match_progress": {
+    "placeholders": {
+      "round": {
+        "type": "String"
+      },
+      "rounds": {
+        "type": "String"
+      },
+      "q": {
+        "type": "String"
+      },
+      "qs": {
+        "type": "String"
+      },
+      "n": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_auction_total": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_page_answer": {
+    "placeholders": {
+      "surah": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_you_recite": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_other_recites": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_bid_sent": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_turn_of": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_other_buzzed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_answer_key": {
+    "placeholders": {
+      "said": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "match_locked_out": "أخطأت، الفرصة للمنافس",
+  "match_your_chance": "أخطأ منافسك، أجب الآن",
+  "match_handed_over": "أخطأ {wrong}، يجيب الآن {name}",
+  "match_worth": "قيمة السؤال الآن: {count} نقاط",
+  "@match_handed_over": {
+    "placeholders": {
+      "wrong": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_worth": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "splash_tagline": "رفيقك في تلاوة القرآن ومراجعته",
+  "home_greeting": "السلام عليكم",
+  "home_continue": "تابع القراءة · صفحة {page}",
+  "@home_continue": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "home_start_reading": "ابدأ القراءة",
+  "home_play_now": "العب الآن",
+  "home_rounds": "سبع فقرات · ٢٨ سؤالًا",
+  "home_more": "المزيد",
+  "home_tajweed_guide": "دليل التجويد",
+  "home_settings": "الإعدادات",
+  "surah_filter_hint": "اسم السورة أو رقمها",
+  "surah_page_short": "ص {page}",
+  "@surah_page_short": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "surah_none": "لا توجد سورة بهذا الاسم",
+  "light_mode": "الوضع الفاتح",
+  "lobby_title": "جاهز للتحدي؟",
+  "lobby_subtitle": "اختر دورك وابدأ المنافسة",
+  "match_role_player_desc": "تجيب وتنافس على النقاط",
+  "match_role_referee_desc": "تدير الأسئلة وتحكم الإجابات",
+  "match_mode_same_room_desc": "الجميع في مكان واحد",
+  "match_mode_remote_desc": "كل واحد من جهازه",
+  "match_name_hint": "مثال: عبدالله",
+  "match_id_placeholder": "رقم المباراة",
+  "match_you_short": "أنت",
+  "match_vs": "ضد",
+  "match_answering_now": "يجيب الآن",
+  "match_round_of": "الفقرة {round} من {rounds} · السؤال {q} من {qs}",
+  "@match_round_of": {
+    "placeholders": {
+      "round": {
+        "type": "String"
+      },
+      "rounds": {
+        "type": "String"
+      },
+      "q": {
+        "type": "String"
+      },
+      "qs": {
+        "type": "String"
+      }
+    }
+  },
+  "match_question_done": "انتهى",
+  "match_points_chip": "{count} نقاط",
+  "@match_points_chip": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "referee_tools": "أدوات الحكم",
+  "referee_tools_hint": "نقطة يدوية وتعديل النتيجة",
+  "match_share_code": "شارك الرمز ليدخل الآخرون نفس المباراة",
+  "match_seats": "المقاعد",
+  "match_final_score": "النتيجة النهائية",
+  "match_tap_to_copy": "اضغط للنسخ",
+  "match_winner_chip": "الفائز",
+  "match_replace": "سؤال بديل",
+  "match_replace_title": "تبديل السؤال؟",
+  "match_replace_body": "سيُستبدل هذا السؤال بسؤال آخر من نفس الفقرة، ويظهر للمتسابقين أنه سؤال بديل. إن احتُسبت له نقاط فستُلغى.",
+  "match_replace_do": "بدّل السؤال",
+  "match_cancel": "إلغاء",
+  "match_replaced_chip": "سؤال بديل",
+  "match_listen_question": "استمع للسؤال من الحكم",
+  "match_listen_hint": "يظهر نص السؤال بعد انتهائه",
+  "match_no_timer": "بلا وقت",
+  "search_tashkeel_keyboard": "لوحة التشكيل",
+  "saved_pages": "الصفحات المحفوظة",
+  "saved_pages_empty": "لا توجد صفحات محفوظة بعد",
+  "saved_pages_empty_hint": "اضغط زر الحفظ أعلى صفحة المصحف لتعود إليها لاحقًا",
+  "save_page": "حفظ الصفحة",
+  "page_saved": "حُفظت الصفحة {page}",
+  "@page_saved": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "page_unsaved": "أُزيلت الصفحة {page} من المحفوظات",
+  "@page_unsaved": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "undo": "تراجع",
+  "saved_count": "{count} صفحة محفوظة",
+  "@saved_count": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "reader_more": "المزيد",
+  "auth_login_title": "تسجيل الدخول",
+  "auth_register_title": "حساب جديد",
+  "auth_gate_title": "المسابقة تحتاج حسابًا",
+  "auth_gate_subtitle": "سجّل الدخول أو أنشئ حسابًا لتلعب وتُحفظ نتائجك. القراءة متاحة للجميع دون حساب.",
+  "auth_email": "البريد الإلكتروني",
+  "auth_password": "كلمة المرور",
+  "auth_name": "الاسم الظاهر للمنافسين",
+  "auth_login": "دخول",
+  "auth_register": "إنشاء الحساب",
+  "auth_to_register": "ليس لديك حساب؟ أنشئ حسابًا",
+  "auth_to_login": "لديك حساب؟ سجّل الدخول",
+  "auth_err_invalid_email": "البريد الإلكتروني غير صحيح",
+  "auth_err_weak_password": "كلمة المرور ٦ أحرف على الأقل",
+  "auth_err_name": "اكتب اسمًا من حرفين على الأقل",
+  "auth_err_email_taken": "هذا البريد مسجّل بالفعل، سجّل الدخول",
+  "auth_err_invalid_credentials": "البريد أو كلمة المرور غير صحيحة",
+  "auth_err_generic": "تعذر إكمال الطلب، حاول مرة أخرى",
+  "profile_title": "حسابي",
+  "profile_matches": "مباريات",
+  "profile_wins": "فوز",
+  "profile_draws": "تعادل",
+  "profile_losses": "خسارة",
+  "profile_points": "نقاط",
+  "profile_win_rate": "نسبة الفوز {rate}٪",
+  "@profile_win_rate": {
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "profile_recent": "آخر المباريات",
+  "profile_no_matches": "لم تلعب أي مباراة بعد",
+  "profile_vs": "ضد {name}",
+  "@profile_vs": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "leaderboard": "لوحة المتصدرين",
+  "leaderboard_empty": "لا توجد نتائج بعد، كن أول المتصدرين",
+  "logout": "تسجيل الخروج",
+  "playing_as": "تلعب باسم {name}",
+  "@playing_as": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_err_login_required": "سجّل الدخول للعب",
+  "match_err_already_player": "أنت متسابق في هذه المباراة",
+  "match_err_already_referee": "أنت الحكم في هذه المباراة",
+  "you_label": "(أنت)",
+  "settings_competition": "المسابقة",
+  "game_sounds": "أصوات المسابقة",
+  "game_sounds_subtitle": "الجرس، الإجابة الصحيحة والخاطئة، والثواني الأخيرة",
+  "media_connecting": "جارٍ الاتصال بالصوت والصورة…",
+  "media_failed": "تعذر الاتصال بالصوت والصورة",
+  "media_retry": "إعادة المحاولة",
+  "media_mic": "الميكروفون",
+  "media_camera": "الكاميرا",
+  "media_not_here": "لم ينضم بعد",
+  "library": "التفاسير والتلاوات",
+  "library_subtitle": "حمّل تفسيرًا أو ترجمة أو قارئًا لتستخدمه دون إنترنت",
+  "library_tafsirs": "التفاسير",
+  "library_translations": "الترجمات",
+  "library_reciters": "القراء",
+  "library_bundled": "مضمّن",
+  "library_downloaded": "محمّل",
+  "library_download": "تحميل",
+  "library_delete": "حذف",
+  "library_in_use": "مستخدم",
+  "library_use": "استخدام",
+  "library_offline": "تعذّر تحميل القائمة. تحقق من اتصالك بالإنترنت.",
+  "library_download_failed": "تعذّر التحميل. حاول مرة أخرى.",
+  "library_search": "ابحث بالاسم أو اللغة",
+  "library_surahs_count": "{count} سورة محمّلة",
+  "@library_surahs_count": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "library_download_all": "تحميل الكل",
+  "library_delete_confirm": "حذف {name}؟",
+  "@library_delete_confirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tafsir": "التفسير",
+  "translation": "الترجمة",
+  "recitation": "الاستماع",
+  "recitation_play_from": "استمع من هذه الآية",
+  "recitation_download_surah": "حمّل السورة للاستماع",
+  "recitation_downloading": "جارٍ التحميل {percent}",
+  "@recitation_downloading": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "recitation_reciter": "القارئ",
+  "more_downloads": "المزيد…",
+  "text_unavailable": "تعذّر عرض النص",
+  "settings_reading": "القراءة والاستماع",
+  "sheet_tab_similar": "المتشابهات والتجويد",
+  "sheet_tab_tafsir": "التفسير والترجمة",
+  "delete_account": "حذف الحساب",
+  "delete_account_body": "سيُحذف حسابك نهائيًا، وتبقى مبارياتك السابقة في السجل دون اسمك. أدخل كلمة المرور للتأكيد.",
+  "delete_account_confirm": "حذف نهائي",
+  "delete_account_done": "تم حذف حسابك",
+  "cancel": "إلغاء",
+  "about": "عن التطبيق والخصوصية",
+  "about_subtitle": "سياسة الخصوصية ومصادر المحتوى",
+  "about_tagline": "مصحف للقراءة والتجويد، ومسابقة للحفّاظ",
+  "about_version": "الإصدار {version}",
+  "@about_version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "privacy_title": "سياسة الخصوصية",
+  "privacy_reading_title": "القراءة دون حساب",
+  "privacy_reading_body": "المصحف والبحث والتجويد والتفاسير والتلاوات تعمل دون تسجيل. الصفحات المحفوظة وآخر صفحة قرأتها وما تحمّله من تفاسير وتلاوات تبقى على جهازك فقط.",
+  "privacy_account_title": "حساب المسابقة",
+  "privacy_account_body": "للعب في المسابقة نحفظ بريدك الإلكتروني واسمك وكلمة مرورك مشفّرة، ونتائج مبارياتك لعرض إحصاءاتك ولوحة المتصدرين. لا نبيع بياناتك ولا نشاركها مع أي جهة.",
+  "privacy_media_title": "الصوت والصورة",
+  "privacy_media_body": "في المباريات عن بُعد يُبث الصوت والصورة مباشرة بين المشاركين فقط عند تشغيلك لهما، ولا يُسجَّل أو يُحفظ أي منهما.",
+  "privacy_delete_title": "حذف بياناتك",
+  "privacy_delete_body": "يمكنك حذف حسابك في أي وقت من صفحة حسابك، فيُحذف بريدك واسمك وكلمة مرورك، وتبقى نتائج المباريات دون اسمك.",
+  "sources_title": "مصادر المحتوى",
+  "sources_body": "نص المصحف: مشروع تنزيل (tanzil.net) برواية حفص.\nالتفاسير والترجمات والتلاوات: alquran.cloud وislamic.network.\nالتفسير الميسر: مجمع الملك فهد لطباعة المصحف الشريف.\nالخطوط: Amiri Quran وIBM Plex Sans Arabic برخصة SIL OFL.",
+  "rules_title": "طريقة اللعب",
+  "rules_overview_title": "المباراة",
+  "rules_overview": "متسابقان وحكم، والمباراة {rounds} فقرات في كل منها {perRound} أسئلة.\nيُعدّ الحكم المباراة ويختار أسئلتها أو يتركها عشوائية، ثم ينشرها ليدخل المتسابقان برقمها.\nالعبوا في نفس المكان، أو عن بُعد بالصوت والصورة.",
+  "rules_players": "للمتسابق",
+  "rules_referee": "دور الحكم",
+  "rules_what_do_you_know": "سؤال له إجابات كثيرة، ويذكر المتسابقان الإجابات بالتناوب.\nلا يوجد وقت محدد، والحكم ينتقل إلى السؤال التالي متى شاء.\nلكل متسابق تجاوز واحد في السؤال: إن لم تكن لديه إجابة ينتقل الدور لمنافسه دون خطأ.\nلكل متسابق {strikes} أخطاء في السؤال، وبآخرها يفوز منافسه: {cleanPoints} إن لم يخطئ أبدًا، وإلا {points}.",
+  "referee_what_do_you_know": "اقرأ السؤال، واضغط «صحيح» لكل إجابة صحيحة أو «خطأ» للخطأ، ويتبدل الدور تلقائيًا. وإن طلب المتسابق التجاوز فاضغط «تجاوز» (مرة واحدة لكل متسابق). انتقل إلى السؤال التالي متى رأيت.",
+  "rules_ayah_number": "تُعرض أول آية في صفحة، ويكتب كل متسابق سرًا عدد آيات الصفحة خلال {time}.\nمن أصاب العدد أخذ {points}، وإلا فالأقرب.\nإن أصاب الاثنان أخذها الأسرع إجابةً، وإن كتبا العدد الخاطئ نفسه فلا نقطة لأحد.",
+  "referee_ayah_number": "اقرأ الآية للمتسابقين، وبعد أن يكتبا العدد اضغط «اكشف الإجابات».",
+  "rules_auction": "فئة لها عدد معروف من الآيات يظهر للمتسابقَين، والمزايدة علنية وبالتناوب: يبدأ أحدهما (عشوائيًا في أول سؤال، ثم بالتبادل) ثم يرد الآخر.\nكل مزايدة يجب أن تزيد على الأخيرة وتعيد العدّاد {bid}، ومن زايد على العدد الكلي انتهت المزايدة له.\nيمكن للمتسابق أن يقول «تفضّل» فيسرد صاحب أعلى مزايدة، وكذلك عند انتهاء الوقت.\nيذكر ما زايد عليه خلال {recite}: إن أكمل أخذ نقطة لما دون ٢٠، ونقطتين من ٢٠، و٣ من ٣٠، وهكذا؛ وإلا أخذ منافسه {points}.",
+  "referee_auction": "أعلن الفئة وتابع المزايدة، ويمكنك إغلاقها بـ «أغلق المزايدة». ثم اضغط «صحيح» إن أكمل المتسابق ما زايد عليه أو «خطأ» إن أخطأ.",
+  "rules_similar": "تُعرض بداية مشتركة بين عدة مواضع، ولا يوجد جرس: أي متسابق يجيب مباشرة بصوته.\nالإجابة الصحيحة خلال {fast} = {fastPoints}، وحتى {slow} = {slowPoints}، وبعدها لا يأخذ أحد شيئًا.\nلكل متسابق {strikes} أخطاء، وبعدها لا يحق له الإجابة.",
+  "referee_similar": "اقرأ البداية، وعندما يجيب أحدهما اضغط «صحيح» أو «خطأ» تحت اسمه.",
+  "rules_buzzer": "السؤال مخفي عن المتسابقين والجمهور، والحكم يقرؤه بصوته.\nأول من يضغط الجرس خلال {time} يجيب، والإجابة الصحيحة {points}.\nإن أخطأ يظهر السؤال كاملًا للجميع ويجيب منافسه، وإن أخطأ هو أيضًا فلا نقطة.",
+  "referee_buzzer": "اقرأ السؤال بصوت واضح (يظهر لك وحدك)، ثم احكم بـ «صحيح» أو «خطأ» على من ضغط أولًا.",
+  "rules_referee_general_title": "للحكم في كل الفقرات",
+  "rules_referee_general": "يمكنك دائمًا «سؤال بديل» لتبديل السؤال، ويظهر للمتسابقين أنه بديل، وإن كان محسومًا تُلغى نقاطه.\nويمكنك دائمًا «السؤال التالي»، وإن لم يُحسم السؤال فلا نقطة لأحد.\nأنت من يبدأ المباراة بعد دخول المتسابقَين.",
+  "match_bid_none": "لا مزايدات بعد: ابدأ المزايدة",
+  "match_bid_high": "أعلى مزايدة: {bid} لـ {name}",
+  "@match_bid_high": {
+    "placeholders": {
+      "bid": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_you_high": "مزايدتك الأعلى: {bid}، بانتظار منافسك",
+  "@match_bid_you_high": {
+    "placeholders": {
+      "bid": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_more_than": "أكثر من {n}",
+  "@match_bid_more_than": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_raise": "زايِد",
+  "match_bid_pass": "تفضّل، اسرد أنت",
+  "match_bid_hint": "كل مزايدة تعيد العدّاد دقيقة، وعند انتهائه يسرد صاحب أعلى مزايدة",
+  "match_similar_speak": "لا يوجد جرس: أجب بصوتك مباشرة",
+  "match_similar_out": "استنفدت محاولاتك الثلاث",
+  "match_similar_referee": "احكم على من أجاب منهما",
+  "match_tiebreak_chip": "سؤال الحسم",
+  "setup_title": "إعداد المباراة",
+  "setup_draft_note": "المباراة غير منشورة: لن يدخلها المتسابقون حتى تنشرها. اختر أسئلة كل فقرة أو اتركها لتُختار عشوائيًا.",
+  "setup_count": "{n} من {total}",
+  "@setup_count": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_random_rest": "الباقي عشوائي",
+  "setup_from_bank": "من البنك",
+  "setup_generate": "توليد",
+  "setup_new": "سؤال جديد",
+  "setup_bank_empty": "لا أسئلة محفوظة لهذه الفقرة. جرّب «توليد».",
+  "setup_add_selected": "إضافة ({n})",
+  "@setup_add_selected": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_full": "اكتملت أسئلة هذه الفقرة",
+  "setup_publish": "نشر المباراة",
+  "setup_publish_hint": "بعد النشر يستطيع المتسابقان الدخول برقم المباراة",
+  "setup_prompt": "نص السؤال",
+  "setup_answer": "الإجابة",
+  "setup_refs": "الآيات (سورة:آية، مفصولة بفواصل)",
+  "setup_page": "رقم الصفحة (١–٦٠٤)",
+  "setup_add": "إضافة",
+  "setup_page_label": "صفحة {page}",
+  "@setup_page_label": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "match_err_not_published": "لم ينشر الحكم هذه المباراة بعد",
+  "rules_secs": "{n} ثانية",
+  "@rules_secs": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "rules_minute": "دقيقة",
+  "rules_point1": "نقطة",
+  "rules_point2": "نقطتان",
+  "rules_points": "{n} نقاط",
+  "@rules_points": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_overview": {
+    "placeholders": {
+      "rounds": {
+        "type": "String"
+      },
+      "perRound": {
+        "type": "String"
+      }
+    }
+  },
+  "rules_overview_tiebreak": "لا يوجد تعادل: إن تساوت النقاط في النهاية يُطرح سؤال حسم من الفقرة الأخيرة حتى يتقدم أحدهما.",
+  "@rules_what_do_you_know": {
+    "placeholders": {
+      "strikes": {
+        "type": "String"
+      },
+      "cleanPoints": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_ayah_number": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_auction": {
+    "placeholders": {
+      "bid": {
+        "type": "String"
+      },
+      "recite": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_similar": {
+    "placeholders": {
+      "fast": {
+        "type": "String"
+      },
+      "fastPoints": {
+        "type": "String"
+      },
+      "slow": {
+        "type": "String"
+      },
+      "slowPoints": {
+        "type": "String"
+      },
+      "strikes": {
+        "type": "String"
+      }
+    }
+  },
+  "@rules_buzzer": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "@match_start": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "@round_hint_what_do_you_know": {
+    "placeholders": {
+      "strikes": {
+        "type": "String"
+      }
+    }
+  },
+  "match_pass_turn": "تجاوز (مرة واحدة)",
+  "match_pass_for": "تجاوز لـ {name}",
+  "@match_pass_for": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "match_passed": "تجاوز",
+  "round_sard": "السرد",
+  "round_hint_sard": "قل آخر كلمة في هذه الآية",
+  "rules_sard": "تُعرض أول كلمة من آية، وإن شاركتها آيات أخرى في بدايتها تُعرض كلمتان أو أكثر حتى تتميز.\nيقول المتسابق آخر كلمة في الآية مباشرة بصوته، ومن أصاب أخذ {points}.\nلكل متسابق {strikes} محاولات، وإن انتهت {time} فلا نقطة لأحد.",
+  "@rules_sard": {
+    "placeholders": {
+      "points": {
+        "type": "String"
+      },
+      "strikes": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "referee_sard": "اقرأ بداية الآية، وعندما يجيب أحدهما اضغط «صحيح» أو «خطأ» تحت اسمه.",
+  "match_sard_speak": "لا يوجد جرس: قل آخر كلمة في الآية بصوتك",
+  "match_sard_out": "استنفدت محاولاتك",
+  "setup_sard_ayah": "الآية (سورة:آية)",
+  "round_right_left": "يمين يسار",
+  "round_hint_right_left": "هل هذه الآية في الصفحة اليمنى أم اليسرى؟",
+  "rules_right_left": "لكل متسابق دوره: {count} بدايات آيات تظهر واحدة تلو الأخرى، وكل بداية لا تشاركها آية أخرى.\nيحدد المتسابق خلال {time} هل الآية في الصفحة اليمنى أم اليسرى، وإن انتهى الوقت لا تُحتسب.\nلا يعرف المتسابق نتيجته حتى تنتهي بداياته، ثم يأتي دور منافسه.\nصاحب الإجابات الصحيحة الأكثر يأخذ {points}، وعند التساوي لا نقطة لأحد.",
+  "@rules_right_left": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "referee_right_left": "اضغط «ابدأ دور» لكل متسابق حين يكون جاهزًا؛ الإجابات تُحتسب تلقائيًا من هاتفه، وترى أنت الإجابة الصحيحة لكل بداية.",
+  "rl_right": "يمين",
+  "rl_left": "يسار",
+  "rl_get_ready": "استعد: دورك ({count} بدايات، {time} لكل منها)",
+  "@rl_get_ready": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_waiting_run": "دور {name}، بانتظار أن يبدأ الحكم",
+  "@rl_waiting_run": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_running_other": "دور {name}: {n} من {total}",
+  "@rl_running_other": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "n": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_progress": "{n} من {total}",
+  "@rl_progress": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_start_run": "ابدأ دور {name}",
+  "@rl_start_run": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_key": "الإجابة: {side} · صفحة {page} · {surah} {ayah}",
+  "@rl_key": {
+    "placeholders": {
+      "side": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      },
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
+        "type": "String"
+      }
+    }
+  },
+  "rl_result": "{name}: {right} صحيحة من {total}",
+  "@rl_result": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "right": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_rl_ayahs": "الآيات (عدد زوجي، ١٢ عادةً)",
+  "quran_font": "خط المصحف",
+  "font_hafs": "خط حفص (مجمع الملك فهد)",
+  "font_hafs_note": "كالمصحف المطبوع",
+  "font_amiri": "الأميري",
+  "font_noto": "نوتو نسخ",
+  "group_default": "عام",
+  "group_default_note": "بدون مجموعة",
+  "group_save_title": "حفظ صفحة {page} في",
+  "@group_save_title": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "group_new": "مجموعة جديدة",
+  "group_name": "اسم المجموعة",
+  "group_name_hint": "مثل: ختمة التهجد",
+  "group_create": "إنشاء",
+  "group_create_save": "إنشاء وحفظ",
+  "group_delete": "حذف المجموعة",
+  "group_delete_body": "ستُنقل صفحات «{name}» إلى «عام».",
+  "@group_delete_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "group_empty": "لا صفحات في هذه المجموعة بعد",
+  "page_saved_in": "حُفظت صفحة {page} في «{group}»",
+  "@page_saved_in": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      },
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_your_open": "أنت تبدأ المزايدة",
+  "match_bid_wait_open": "{name} يبدأ المزايدة",
+  "@match_bid_wait_open": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_rounds_title": "الفقرات وعدد الأسئلة",
+  "setup_rounds_hint": "اختر فقرة واحدة على الأقل وعدد أسئلة كل فقرة (٤ لكل فقرة افتراضيًا).",
+  "setup_rounds_total": "المجموع: {n}",
+  "match_err_no_rounds": "اختر فقرة واحدة على الأقل",
+  "match_err_too_many": "عدد الأسئلة أكبر من المسموح",
+  "@setup_rounds_total": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "setup_count_save": "حفظ",
+  "match_bid_max": "أقصى مزايدة: {max}",
+  "@match_bid_max": {
+    "placeholders": {
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_worth": "مزايدة {bid} تساوي {points} إن أكملتها",
+  "@match_bid_worth": {
+    "placeholders": {
+      "bid": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "match_bid_points1": "نقطة",
+  "match_bid_points2": "نقطتين",
+  "match_bid_points": "{n} نقاط",
+  "@match_bid_points": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  }
+}

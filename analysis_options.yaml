@@ -1,0 +1,11 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - lib/core/translations/**
+    - build/**
+
+linter:
+  rules:
+    # A map entry needs both key and value guarded; `?key: value` can't do that.
+    use_null_aware_elements: false

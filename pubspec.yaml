@@ -1,0 +1,82 @@
+name: almaher
+description: "الماهر — Quran app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  logging: ^1.3.0
+  get_it: ^8.3.0
+  shared_preferences: ^2.5.5
+  dartz: ^0.10.1
+  intl: ^0.20.2
+  equatable: ^2.1.0
+  flutter_screenutil: ^5.9.3
+  provider: ^6.1.2
+  flutter_localization: ^0.4.1
+  flutter_bloc: ^8.1.6
+  bloc: ^8.1.4
+  flutter_svg: ^2.3.0
+  socket_io_client: ^3.1.6
+  http: ^1.6.0
+  flutter_secure_storage: ^11.2.0
+  just_audio: ^0.10.6
+  path_provider: ^2.1.6
+  livekit_client: ^2.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  intl_utils: ^2.8.16
+  flutter_lints: ^6.0.0
+
+# Localization config
+flutter_intl:
+  main_locale: ar
+  enabled: true
+  output_dir: lib/core/translations
+  arb_dir: lib/core/translations/l10n
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/quran/
+    - assets/quran/editions/
+    - assets/svg/
+    - assets/sounds/
+
+  fonts:
+    # Quran script face. Pairs with the Tanzil Uthmani text in
+    # assets/quran/quran_uthmani.json and draws U+06DD + digits as the
+    # end-of-ayah ornament with the number inside.
+    - family: AmiriQuran
+      fonts:
+        - asset: assets/fonts/AmiriQuran-Regular.ttf
+    # Mushaf default: the King Fahd Complex Hafs font, matching the printed
+    # Madani mushaf (see assets/fonts/UthmanicHafs-LICENSE.txt).
+    - family: UthmanicHafs
+      fonts:
+        - asset: assets/fonts/UthmanicHafs_V22.ttf
+    # Other mushaf fonts users can choose (SIL OFL, licences beside them).
+    - family: NotoNaskhArabic
+      fonts:
+        - asset: assets/fonts/NotoNaskhArabic-Regular.ttf
+    # Interface text (OFL, see assets/fonts/IBMPlexSansArabic-OFL.txt).
+    - family: IBMPlexSansArabic
+      fonts:
+        - asset: assets/fonts/IBMPlexSansArabic-Regular.ttf
+        - asset: assets/fonts/IBMPlexSansArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBMPlexSansArabic-Bold.ttf
+          weight: 700
