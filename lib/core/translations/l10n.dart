@@ -1621,10 +1621,10 @@ class S {
     );
   }
 
-  /// `سبع فقرات · ٢٨ سؤالًا`
+  /// `ثماني فقرات · ٣٢ سؤالًا`
   String get home_rounds {
     return Intl.message(
-      'سبع فقرات · ٢٨ سؤالًا',
+      'ثماني فقرات · ٣٢ سؤالًا',
       name: 'home_rounds',
       desc: '',
       args: [],
@@ -4100,6 +4100,236 @@ class S {
       name: 'match_bid_points',
       desc: '',
       args: [n],
+    );
+  }
+
+  /// `إنهاء المباراة الآن`
+  String get match_end_now {
+    return Intl.message(
+      'إنهاء المباراة الآن',
+      name: 'match_end_now',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إنهاء المباراة؟`
+  String get match_end_title {
+    return Intl.message(
+      'إنهاء المباراة؟',
+      name: 'match_end_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تنتهي المباراة الآن، وتُحتسب النتيجة الحالية ويُعلن الفائز.`
+  String get match_end_body {
+    return Intl.message(
+      'تنتهي المباراة الآن، وتُحتسب النتيجة الحالية ويُعلن الفائز.',
+      name: 'match_end_body',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إنهاء المباراة`
+  String get match_end_do {
+    return Intl.message(
+      'إنهاء المباراة',
+      name: 'match_end_do',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `انتهت المباراة بالفعل`
+  String get match_err_already_finished {
+    return Intl.message(
+      'انتهت المباراة بالفعل',
+      name: 'match_err_already_finished',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الانسحاب من السؤال`
+  String get match_forfeit_question {
+    return Intl.message(
+      'الانسحاب من السؤال',
+      name: 'match_forfeit_question',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الانسحاب من هذا السؤال؟`
+  String get match_forfeit_question_title {
+    return Intl.message(
+      'الانسحاب من هذا السؤال؟',
+      name: 'match_forfeit_question_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ينتهي السؤال الآن وتذهب نقاطه إلى منافسك.`
+  String get match_forfeit_question_body {
+    return Intl.message(
+      'ينتهي السؤال الآن وتذهب نقاطه إلى منافسك.',
+      name: 'match_forfeit_question_body',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `انسحاب`
+  String get match_forfeit_question_do {
+    return Intl.message(
+      'انسحاب',
+      name: 'match_forfeit_question_do',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الانسحاب من المباراة`
+  String get match_forfeit_match {
+    return Intl.message(
+      'الانسحاب من المباراة',
+      name: 'match_forfeit_match',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الانسحاب من المباراة؟`
+  String get match_forfeit_match_title {
+    return Intl.message(
+      'الانسحاب من المباراة؟',
+      name: 'match_forfeit_match_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تخسر المباراة ويفوز منافسك مهما كانت النتيجة.`
+  String get match_forfeit_match_body {
+    return Intl.message(
+      'تخسر المباراة ويفوز منافسك مهما كانت النتيجة.',
+      name: 'match_forfeit_match_body',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `انسحاب من المباراة`
+  String get match_forfeit_match_do {
+    return Intl.message(
+      'انسحاب من المباراة',
+      name: 'match_forfeit_match_do',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `انسحب {name} من السؤال، وذهبت النقاط إلى {other}`
+  String match_question_forfeited(String name, String other) {
+    return Intl.message(
+      'انسحب $name من السؤال، وذهبت النقاط إلى $other',
+      name: 'match_question_forfeited',
+      desc: '',
+      args: [name, other],
+    );
+  }
+
+  /// `انسحب {name} من المباراة`
+  String match_forfeited(String name) {
+    return Intl.message(
+      'انسحب $name من المباراة',
+      name: 'match_forfeited',
+      desc: '',
+      args: [name],
+    );
+  }
+
+  /// `آية بآية`
+  String get round_ayah_by_ayah {
+    return Intl.message(
+      'آية بآية',
+      name: 'round_ayah_by_ayah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `في دورك، قل بداية الآية التالية`
+  String get round_hint_ayah_by_ayah {
+    return Intl.message(
+      'في دورك، قل بداية الآية التالية',
+      name: 'round_hint_ayah_by_ayah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تُعرض بداية آية: أول كلمة، وإن شاركتها آيات أخرى في بدايتها تُعرض كلمتان أو أكثر حتى تتميز.\nيقول المتسابق الذي عليه الدور بداية الآية التالية، ثم يقول منافسه بداية التي تليها، وهكذا بالتناوب.\nلكل دور {time}؛ من أخطأ في البداية أو انتهى وقته ذهبت {points} لمنافسه.\nإن انتهت السورة قبل أن يخطئ أحدهما فلا نقطة لأحد.`
+  String rules_ayah_by_ayah(String time, String points) {
+    return Intl.message(
+      'تُعرض بداية آية: أول كلمة، وإن شاركتها آيات أخرى في بدايتها تُعرض كلمتان أو أكثر حتى تتميز.\nيقول المتسابق الذي عليه الدور بداية الآية التالية، ثم يقول منافسه بداية التي تليها، وهكذا بالتناوب.\nلكل دور $time؛ من أخطأ في البداية أو انتهى وقته ذهبت $points لمنافسه.\nإن انتهت السورة قبل أن يخطئ أحدهما فلا نقطة لأحد.',
+      name: 'rules_ayah_by_ayah',
+      desc: '',
+      args: [time, points],
+    );
+  }
+
+  /// `اقرأ بداية الآية. ترى الآية المطلوبة بعدها: اضغط «صحيح» إن قال المتسابق الذي عليه الدور بدايتها فينتقل الدور إلى منافسه، أو «خطأ» فتذهب النقطة لمنافسه.`
+  String get referee_ayah_by_ayah {
+    return Intl.message(
+      'اقرأ بداية الآية. ترى الآية المطلوبة بعدها: اضغط «صحيح» إن قال المتسابق الذي عليه الدور بدايتها فينتقل الدور إلى منافسه، أو «خطأ» فتذهب النقطة لمنافسه.',
+      name: 'referee_ayah_by_ayah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `دورك: قل بداية الآية التالية`
+  String get match_aba_your_turn {
+    return Intl.message(
+      'دورك: قل بداية الآية التالية',
+      name: 'match_aba_your_turn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `المطلوبة: {opening}… ({surah} {ayah})`
+  String match_aba_next(String opening, String surah, String ayah) {
+    return Intl.message(
+      'المطلوبة: $opening… ($surah $ayah)',
+      name: 'match_aba_next',
+      desc: '',
+      args: [opening, surah, ayah],
+    );
+  }
+
+  /// `قيل حتى الآن ({count})`
+  String match_aba_said(String count) {
+    return Intl.message(
+      'قيل حتى الآن ($count)',
+      name: 'match_aba_said',
+      desc: '',
+      args: [count],
+    );
+  }
+
+  /// `بداية الآية {ayah} من سورة {surah}`
+  String match_aba_source(String surah, String ayah) {
+    return Intl.message(
+      'بداية الآية $ayah من سورة $surah',
+      name: 'match_aba_source',
+      desc: '',
+      args: [surah, ayah],
     );
   }
 }

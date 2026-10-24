@@ -18,6 +18,7 @@ String matchErrorText(S s, String code) => switch (code) {
   'login_required' => s.match_err_login_required,
   'already_player' => s.match_err_already_player,
   'already_referee' => s.match_err_already_referee,
+  'already_finished' => s.match_err_already_finished,
   'no_rounds' => s.match_err_no_rounds,
   'too_many_questions' || 'invalid_count' => s.match_err_too_many,
   _ => s.match_err_generic,

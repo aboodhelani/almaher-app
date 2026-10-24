@@ -22,6 +22,17 @@ class PlayerRoundPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        _actions(context),
+        SizedBox(height: 18.h),
+        _QuitButtons(canQuitQuestion: !round.revealed),
+      ],
+    );
+  }
+
+  Widget _actions(BuildContext context) {
     final s = S.of(context);
     if (round.revealed) {
       return GameBanner(
@@ -54,12 +65,94 @@ class PlayerRoundPanel extends StatelessWidget {
               ),
       ),
       RoundType.whatDoYouKnow => _TurnPanel(match: match, round: round),
+      RoundType.ayahByAyah => _ChainPanel(match: match, round: round),
       RoundType.similar ||
       RoundType.sard => _SpeakPanel(match: match, round: round),
       RoundType.buzzer => _Buzzer(match: match, round: round),
       RoundType.rightLeft => _RightLeftPanel(match: match, round: round),
     };
   }
+}
+
+/// Giving up the current question (its points go to the opponent), or the
+/// whole match (the opponent wins it).
+class _QuitButtons extends StatelessWidget {
+  final bool canQuitQuestion;
+
+  const _QuitButtons({required this.canQuitQuestion});
+
+  @override
+  Widget build(BuildContext context) {
+    final s = S.of(context);
+    final style = OutlinedButton.styleFrom(
+      foregroundColor: GameColors.wrong,
+      side: BorderSide(color: GameColors.wrong.withValues(alpha: 0.6)),
+    );
+    return Wrap(
+      alignment: WrapAlignment.center,
+      spacing: 10.w,
+      runSpacing: 8.h,
+      children: [
+        if (canQuitQuestion)
+          OutlinedButton.icon(
+            style: style,
+            onPressed: () => _confirmQuit(
+              context,
+              title: s.match_forfeit_question_title,
+              body: s.match_forfeit_question_body,
+              action: s.match_forfeit_question_do,
+              event: const MatchQuestionForfeited(),
+            ),
+            icon: const Icon(Icons.skip_next_rounded),
+            label: Text(s.match_forfeit_question),
+          ),
+        OutlinedButton.icon(
+          style: style,
+          onPressed: () => _confirmQuit(
+            context,
+            title: s.match_forfeit_match_title,
+            body: s.match_forfeit_match_body,
+            action: s.match_forfeit_match_do,
+            event: const MatchForfeited(),
+          ),
+          icon: const Icon(Icons.flag_rounded),
+          label: Text(s.match_forfeit_match),
+        ),
+      ],
+    );
+  }
+}
+
+/// Asks before giving up; sends [event] on yes.
+Future<void> _confirmQuit(
+  BuildContext context, {
+  required String title,
+  required String body,
+  required String action,
+  required MatchEvent event,
+}) async {
+  final s = S.of(context);
+  final bloc = context.read<MatchBloc>();
+  final ok = await showDialog<bool>(
+    context: context,
+    builder: (_) => AlertDialog(
+      backgroundColor: GameColors.stageTop,
+      title: Text(title),
+      content: Text(body),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context, false),
+          child: Text(s.match_cancel),
+        ),
+        FilledButton(
+          style: FilledButton.styleFrom(backgroundColor: GameColors.wrong),
+          onPressed: () => Navigator.pop(context, true),
+          child: Text(action),
+        ),
+      ],
+    ),
+  );
+  if (ok == true) bloc.add(event);
 }
 
 /// A secret number: the ayah count, or a bid.
@@ -462,6 +555,77 @@ class _RightLeftPanel extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: children,
+    );
+  }
+}
+
+/// آية بآية: whose turn it is to say the next ayah's opening, and the
+/// openings said so far.
+class _ChainPanel extends StatelessWidget {
+  final MatchStateModel match;
+  final RoundModel round;
+
+  const _ChainPanel({required this.match, required this.round});
+
+  @override
+  Widget build(BuildContext context) {
+    final s = S.of(context);
+    final mine = round.turn == match.you;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        GameBanner(
+          icon: mine ? Icons.mic_rounded : Icons.hearing_rounded,
+          color: playerColor(round.turn),
+          strong: mine,
+          text: mine
+              ? s.match_aba_your_turn
+              : s.match_turn_of(match.participants[round.turn]?.name ?? ''),
+        ),
+        SizedBox(height: 12.h),
+        AyahChainList(round: round),
+      ],
+    );
+  }
+}
+
+/// آية بآية: the openings of the next ayahs said so far, in order.
+class AyahChainList extends StatelessWidget {
+  final RoundModel round;
+
+  const AyahChainList({super.key, required this.round});
+
+  @override
+  Widget build(BuildContext context) {
+    final said = round.chain?.said ?? const <String>[];
+    if (said.isEmpty) return const SizedBox.shrink();
+    final s = S.of(context);
+    return GamePanel(
+      padding: EdgeInsets.all(12.r),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            s.match_aba_said(said.length.toArabicDigits),
+            style: AppTextStyle.xSmall.copyWith(
+              color: GameColors.textMuted,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          for (final (i, opening) in said.indexed)
+            Padding(
+              padding: EdgeInsets.only(top: 6.h),
+              child: Text(
+                '${(i + 1).toArabicDigits}. $opening…',
+                textDirection: TextDirection.rtl,
+                style: AppTextStyle.quranAyah.copyWith(
+                  fontSize: 17.sp,
+                  color: GameColors.text,
+                ),
+              ),
+            ),
+        ],
+      ),
     );
   }
 }

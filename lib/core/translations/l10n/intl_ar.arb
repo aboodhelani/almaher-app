@@ -322,7 +322,7 @@
   },
   "home_start_reading": "ابدأ القراءة",
   "home_play_now": "العب الآن",
-  "home_rounds": "سبع فقرات · ٢٨ سؤالًا",
+  "home_rounds": "ثماني فقرات · ٣٢ سؤالًا",
   "home_more": "المزيد",
   "home_tajweed_guide": "دليل التجويد",
   "home_settings": "الإعدادات",
@@ -988,6 +988,86 @@
   "@match_bid_points": {
     "placeholders": {
       "n": {
+        "type": "String"
+      }
+    }
+  },
+  "match_end_now": "إنهاء المباراة الآن",
+  "match_end_title": "إنهاء المباراة؟",
+  "match_end_body": "تنتهي المباراة الآن، وتُحتسب النتيجة الحالية ويُعلن الفائز.",
+  "match_end_do": "إنهاء المباراة",
+  "match_err_already_finished": "انتهت المباراة بالفعل",
+  "match_forfeit_question": "الانسحاب من السؤال",
+  "match_forfeit_question_title": "الانسحاب من هذا السؤال؟",
+  "match_forfeit_question_body": "ينتهي السؤال الآن وتذهب نقاطه إلى منافسك.",
+  "match_forfeit_question_do": "انسحاب",
+  "match_forfeit_match": "الانسحاب من المباراة",
+  "match_forfeit_match_title": "الانسحاب من المباراة؟",
+  "match_forfeit_match_body": "تخسر المباراة ويفوز منافسك مهما كانت النتيجة.",
+  "match_forfeit_match_do": "انسحاب من المباراة",
+  "match_question_forfeited": "انسحب {name} من السؤال، وذهبت النقاط إلى {other}",
+  "@match_question_forfeited": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "other": {
+        "type": "String"
+      }
+    }
+  },
+  "match_forfeited": "انسحب {name} من المباراة",
+  "@match_forfeited": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "round_ayah_by_ayah": "آية بآية",
+  "round_hint_ayah_by_ayah": "في دورك، قل بداية الآية التالية",
+  "rules_ayah_by_ayah": "تُعرض بداية آية: أول كلمة، وإن شاركتها آيات أخرى في بدايتها تُعرض كلمتان أو أكثر حتى تتميز.\nيقول المتسابق الذي عليه الدور بداية الآية التالية، ثم يقول منافسه بداية التي تليها، وهكذا بالتناوب.\nلكل دور {time}؛ من أخطأ في البداية أو انتهى وقته ذهبت {points} لمنافسه.\nإن انتهت السورة قبل أن يخطئ أحدهما فلا نقطة لأحد.",
+  "@rules_ayah_by_ayah": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "referee_ayah_by_ayah": "اقرأ بداية الآية. ترى الآية المطلوبة بعدها: اضغط «صحيح» إن قال المتسابق الذي عليه الدور بدايتها فينتقل الدور إلى منافسه، أو «خطأ» فتذهب النقطة لمنافسه.",
+  "match_aba_your_turn": "دورك: قل بداية الآية التالية",
+  "match_aba_next": "المطلوبة: {opening}… ({surah} {ayah})",
+  "@match_aba_next": {
+    "placeholders": {
+      "opening": {
+        "type": "String"
+      },
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
+        "type": "String"
+      }
+    }
+  },
+  "match_aba_said": "قيل حتى الآن ({count})",
+  "@match_aba_said": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "match_aba_source": "بداية الآية {ayah} من سورة {surah}",
+  "@match_aba_source": {
+    "placeholders": {
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
         "type": "String"
       }
     }

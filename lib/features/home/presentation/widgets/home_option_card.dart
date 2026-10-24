@@ -122,6 +122,7 @@ class GameHeroCard extends StatelessWidget {
     ('round_auction.svg', GameColors.auction),
     ('round_similar.svg', GameColors.similar),
     ('round_sard.svg', GameColors.sard),
+    ('round_ayah_by_ayah.svg', GameColors.ayahByAyah),
     ('round_right_left.svg', GameColors.rightLeft),
     ('round_buzzer.svg', GameColors.buzzer),
   ];

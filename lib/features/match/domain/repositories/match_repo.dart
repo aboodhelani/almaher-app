@@ -85,6 +85,15 @@ abstract class MatchRepo {
   /// Referee: swaps the current question for an alternative of the same round.
   Future<Either<Failure, void>> replaceQuestion();
 
+  /// Referee: ends the match now; the current scores decide it.
+  Future<Either<Failure, void>> endMatch();
+
+  /// Player: gives up the current question; the other player gets its points.
+  Future<Either<Failure, void>> forfeitQuestion();
+
+  /// Player: quits the match; the other player wins it.
+  Future<Either<Failure, void>> forfeitMatch();
+
   Future<Either<Failure, void>> nextQuestion();
 
   Future<Either<Failure, void>> adjustScore(MatchRole player, int delta);

@@ -206,6 +206,10 @@ class _RoundRules extends StatelessWidget {
         r.sardStrikes.toArabicDigits,
         time(r.sardSeconds),
       ),
+      RoundType.ayahByAyah => s.rules_ayah_by_ayah(
+        time(r.ayahByAyahSeconds),
+        points(r.ayahByAyahPoints),
+      ),
       RoundType.rightLeft => s.rules_right_left(
         6.toArabicDigits,
         time(r.rightLeftItemSeconds),
@@ -224,6 +228,7 @@ class _RoundRules extends StatelessWidget {
     RoundType.auction => s.referee_auction,
     RoundType.similar => s.referee_similar,
     RoundType.sard => s.referee_sard,
+    RoundType.ayahByAyah => s.referee_ayah_by_ayah,
     RoundType.rightLeft => s.referee_right_left,
     RoundType.buzzer => s.referee_buzzer,
   };

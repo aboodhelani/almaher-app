@@ -121,6 +121,15 @@ class MatchRepoImpl implements MatchRepo {
   Future<Either<Failure, void>> replaceQuestion() => _action('round:replace');
 
   @override
+  Future<Either<Failure, void>> endMatch() => _action('referee:end');
+
+  @override
+  Future<Either<Failure, void>> forfeitQuestion() => _action('round:forfeit');
+
+  @override
+  Future<Either<Failure, void>> forfeitMatch() => _action('match:forfeit');
+
+  @override
   Future<Either<Failure, MediaTokenModel>> mediaToken() async {
     try {
       final ack = await _socket.emit('media:token');

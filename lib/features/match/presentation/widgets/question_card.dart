@@ -29,6 +29,7 @@ class QuestionCard extends StatelessWidget {
     final quranText =
         isAyah ||
         round.type == RoundType.sard ||
+        round.type == RoundType.ayahByAyah ||
         (round.type == RoundType.rightLeft && round.rightLeft?.running == true);
     final answer = q.answer;
     final color = roundColor(round.type);
@@ -201,6 +202,12 @@ class QuestionCard extends StatelessWidget {
                               (int.tryParse('${q.meta['page']}') ?? 0)
                                   .toArabicDigits,
                               _ayahCount(int.tryParse(answer) ?? 0),
+                            )
+                          : round.type == RoundType.ayahByAyah
+                          ? s.match_aba_source(
+                              '${q.meta['surahName'] ?? ''}',
+                              (int.tryParse('${q.meta['ayah']}') ?? 0)
+                                  .toArabicDigits,
                             )
                           : round.type == RoundType.sard
                           ? '${s.match_answer_label}: $answer · ${q.meta['surahName'] ?? ''} ${(int.tryParse('${q.meta['ayah']}') ?? 0).toArabicDigits}'

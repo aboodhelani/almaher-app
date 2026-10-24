@@ -15,6 +15,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 class _FakeRepo implements MatchRepo {
   @override
   Future<Either<Failure, void>> replaceQuestion() async => const Right(null);
+  @override
+  Future<Either<Failure, void>> endMatch() async => const Right(null);
+  @override
+  Future<Either<Failure, void>> forfeitQuestion() async => const Right(null);
+  @override
+  Future<Either<Failure, void>> forfeitMatch() async => const Right(null);
 
   @override
   Future<Either<Failure, MediaTokenModel>> mediaToken() async =>
@@ -138,6 +144,9 @@ MatchBloc _bloc(_FakeRepo repo, MatchSessionPrefs prefs) => MatchBloc(
   submitAnswerUseCase: SubmitAnswerUseCase(repo),
   revealAnswersUseCase: RevealAnswersUseCase(repo),
   replaceQuestionUseCase: ReplaceQuestionUseCase(repo),
+  endMatchUseCase: EndMatchUseCase(repo),
+  forfeitQuestionUseCase: ForfeitQuestionUseCase(repo),
+  forfeitMatchUseCase: ForfeitMatchUseCase(repo),
   getMediaTokenUseCase: GetMediaTokenUseCase(repo),
   nextQuestionUseCase: NextQuestionUseCase(repo),
   adjustScoreUseCase: AdjustScoreUseCase(repo),

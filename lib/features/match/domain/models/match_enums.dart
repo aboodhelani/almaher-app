@@ -10,6 +10,13 @@ enum MatchRole {
 
   bool get isPlayer => this != referee;
 
+  /// A player's opponent (the referee has none: itself).
+  MatchRole get opponent => switch (this) {
+    player1 => player2,
+    player2 => player1,
+    referee => referee,
+  };
+
   static MatchRole? fromWire(String? value) {
     for (final r in values) {
       if (r.wire == value) return r;

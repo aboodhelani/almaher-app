@@ -33,6 +33,9 @@ class MatchBloc extends Bloc<MatchEvent, MatchState> {
   final SubmitAnswerUseCase submitAnswerUseCase;
   final RevealAnswersUseCase revealAnswersUseCase;
   final ReplaceQuestionUseCase replaceQuestionUseCase;
+  final EndMatchUseCase endMatchUseCase;
+  final ForfeitQuestionUseCase forfeitQuestionUseCase;
+  final ForfeitMatchUseCase forfeitMatchUseCase;
   final GetMediaTokenUseCase getMediaTokenUseCase;
   final NextQuestionUseCase nextQuestionUseCase;
   final AdjustScoreUseCase adjustScoreUseCase;
@@ -63,6 +66,9 @@ class MatchBloc extends Bloc<MatchEvent, MatchState> {
     required this.submitAnswerUseCase,
     required this.revealAnswersUseCase,
     required this.replaceQuestionUseCase,
+    required this.endMatchUseCase,
+    required this.forfeitQuestionUseCase,
+    required this.forfeitMatchUseCase,
     required this.getMediaTokenUseCase,
     required this.nextQuestionUseCase,
     required this.adjustScoreUseCase,
@@ -116,6 +122,15 @@ class MatchBloc extends Bloc<MatchEvent, MatchState> {
     );
     on<MatchReplaceRequested>(
       (e, emit) => _act(emit, () => replaceQuestionUseCase.call(NoParams())),
+    );
+    on<MatchEndRequested>(
+      (e, emit) => _act(emit, () => endMatchUseCase.call(NoParams())),
+    );
+    on<MatchQuestionForfeited>(
+      (e, emit) => _act(emit, () => forfeitQuestionUseCase.call(NoParams())),
+    );
+    on<MatchForfeited>(
+      (e, emit) => _act(emit, () => forfeitMatchUseCase.call(NoParams())),
     );
     on<MatchRevealRequested>(
       (e, emit) => _act(emit, () => revealAnswersUseCase.call(NoParams())),

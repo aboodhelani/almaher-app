@@ -120,6 +120,36 @@ class RefereeRoundPanel extends StatelessWidget {
             );
           }
           judging.add(_AnswerList(round: round));
+        case RoundType.ayahByAyah:
+          final next = round.chain?.next;
+          judging.add(
+            GameBanner(
+              icon: Icons.mic_rounded,
+              color: playerColor(round.turn),
+              strong: true,
+              text: s.match_turn_of(name(round.turn)),
+            ),
+          );
+          if (next != null) {
+            gap();
+            judging.add(
+              GameBanner(
+                icon: Icons.key_rounded,
+                color: GameColors.correct,
+                text: s.match_aba_next(
+                  next.opening,
+                  next.surahName,
+                  next.ayah.toArabicDigits,
+                ),
+              ),
+            );
+          }
+          gap();
+          judging.add(
+            _Verdicts(correct: s.match_correct, wrong: s.match_wrong),
+          );
+          gap();
+          judging.add(AyahChainList(round: round));
         case RoundType.similar || RoundType.sard:
           judging.add(
             GameBanner(
@@ -248,6 +278,32 @@ Future<void> _confirmReplace(BuildContext context) async {
     ),
   );
   if (ok == true) bloc.add(const MatchReplaceRequested());
+}
+
+/// Asks before ending the match with the current scores.
+Future<void> _confirmEnd(BuildContext context) async {
+  final s = S.of(context);
+  final bloc = context.read<MatchBloc>();
+  final ok = await showDialog<bool>(
+    context: context,
+    builder: (_) => AlertDialog(
+      backgroundColor: GameColors.stageTop,
+      title: Text(s.match_end_title),
+      content: Text(s.match_end_body),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context, false),
+          child: Text(s.match_cancel),
+        ),
+        FilledButton(
+          style: FilledButton.styleFrom(backgroundColor: GameColors.wrong),
+          onPressed: () => Navigator.pop(context, true),
+          child: Text(s.match_end_do),
+        ),
+      ],
+    ),
+  );
+  if (ok == true) bloc.add(const MatchEndRequested());
 }
 
 /// ✓ / ✗ for the answer being given.
@@ -514,6 +570,18 @@ class _RefereeToolsState extends State<_RefereeTools> {
                         ],
                       ),
                     ),
+                  _ToolLabel(s.match_end_now),
+                  OutlinedButton.icon(
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: GameColors.wrong,
+                      side: BorderSide(
+                        color: GameColors.wrong.withValues(alpha: 0.6),
+                      ),
+                    ),
+                    onPressed: () => _confirmEnd(context),
+                    icon: const Icon(Icons.stop_circle_outlined),
+                    label: Text(s.match_end_do),
+                  ),
                 ],
               ),
             ),

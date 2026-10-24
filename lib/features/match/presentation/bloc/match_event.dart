@@ -101,6 +101,20 @@ class MatchReplaceRequested extends MatchEvent {
   const MatchReplaceRequested();
 }
 
+class MatchEndRequested extends MatchEvent {
+  const MatchEndRequested();
+}
+
+/// This player gives up the current question.
+class MatchQuestionForfeited extends MatchEvent {
+  const MatchQuestionForfeited();
+}
+
+/// This player quits the match.
+class MatchForfeited extends MatchEvent {
+  const MatchForfeited();
+}
+
 class MatchRevealRequested extends MatchEvent {
   const MatchRevealRequested();
 }

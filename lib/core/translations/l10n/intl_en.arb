@@ -322,7 +322,7 @@
   },
   "home_start_reading": "Start reading",
   "home_play_now": "Play now",
-  "home_rounds": "Seven rounds · 28 questions",
+  "home_rounds": "Eight rounds · 32 questions",
   "home_more": "More",
   "home_tajweed_guide": "Tajweed guide",
   "home_settings": "Settings",
@@ -988,6 +988,86 @@
   "@match_bid_points": {
     "placeholders": {
       "n": {
+        "type": "String"
+      }
+    }
+  },
+  "match_end_now": "End the match now",
+  "match_end_title": "End the match?",
+  "match_end_body": "The match ends now; the current scores decide the winner.",
+  "match_end_do": "End match",
+  "match_err_already_finished": "The match has already ended",
+  "match_forfeit_question": "Skip question",
+  "match_forfeit_question_title": "Give up this question?",
+  "match_forfeit_question_body": "The question ends now and its points go to your opponent.",
+  "match_forfeit_question_do": "Give up",
+  "match_forfeit_match": "Quit match",
+  "match_forfeit_match_title": "Quit the match?",
+  "match_forfeit_match_body": "You lose the match and your opponent wins, whatever the score.",
+  "match_forfeit_match_do": "Quit match",
+  "match_question_forfeited": "{name} gave up the question; the points go to {other}",
+  "@match_question_forfeited": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "other": {
+        "type": "String"
+      }
+    }
+  },
+  "match_forfeited": "{name} quit the match",
+  "@match_forfeited": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "round_ayah_by_ayah": "Ayah by ayah",
+  "round_hint_ayah_by_ayah": "On your turn, say the next ayah's opening",
+  "rules_ayah_by_ayah": "An ayah's opening is shown: its first word, or two or more while other ayahs start the same way.\nThe player whose turn it is says the opening of the next ayah, then the opponent says the one after it, and so on in turn.\nEach turn has {time}; a wrong opening or running out of time gives the opponent {points}.\nIf the surah ends before either makes a mistake, nobody scores.",
+  "@rules_ayah_by_ayah": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "referee_ayah_by_ayah": "Read the ayah's opening. You see the ayah due next: tap Correct if the player whose turn it is says its opening (the turn passes to the opponent), or Wrong to give the opponent the point.",
+  "match_aba_your_turn": "Your turn: say the next ayah's opening",
+  "match_aba_next": "Due next: {opening}… ({surah} {ayah})",
+  "@match_aba_next": {
+    "placeholders": {
+      "opening": {
+        "type": "String"
+      },
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
+        "type": "String"
+      }
+    }
+  },
+  "match_aba_said": "Said so far ({count})",
+  "@match_aba_said": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "match_aba_source": "Opening of ayah {ayah}, surah {surah}",
+  "@match_aba_source": {
+    "placeholders": {
+      "surah": {
+        "type": "String"
+      },
+      "ayah": {
         "type": "String"
       }
     }

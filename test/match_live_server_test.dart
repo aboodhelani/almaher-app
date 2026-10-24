@@ -94,11 +94,11 @@ void main() {
 
     expectOk(await ref.startMatch());
     await until(() => refLatest?.round != null && p1Latest?.round != null);
-    expect(refLatest!.round!.total, 28);
+    expect(refLatest!.round!.total, 32);
 
     var p1Expected = 0;
     final seen = <RoundType>[];
-    for (var i = 0; i < 28; i++) {
+    for (var i = 0; i < 32; i++) {
       await until(
         () =>
             refLatest!.round!.index == i &&
@@ -164,6 +164,17 @@ void main() {
           expectOk(await ref.judge(correct: false, player: MatchRole.player2));
           expectOk(await ref.judge(correct: false, player: MatchRole.player2));
           expectOk(await ref.judge(correct: true, player: MatchRole.player1));
+        case RoundType.ayahByAyah:
+          // In turn: player1 says the next opening if it is their turn, then
+          // player2 gets it wrong and player1 scores.
+          expect(refLatest!.round!.chain!.next, isNotNull);
+          expect(p1Latest!.round!.chain!.next, isNull);
+          if (r.turn == MatchRole.player1) {
+            expectOk(await ref.judge(correct: true));
+            await until(() => refLatest!.round!.turn == MatchRole.player2);
+            expect(refLatest!.round!.chain!.said, hasLength(1));
+          }
+          expectOk(await ref.judge(correct: false));
         case RoundType.rightLeft:
           // Two runs: the first runner is always right, the second always
           // wrong (the referee sees each opening's side).

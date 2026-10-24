@@ -8,6 +8,7 @@ String roundName(S s, RoundType t) => switch (t) {
   RoundType.auction => s.round_auction,
   RoundType.similar => s.round_similar,
   RoundType.sard => s.round_sard,
+  RoundType.ayahByAyah => s.round_ayah_by_ayah,
   RoundType.rightLeft => s.round_right_left,
   RoundType.buzzer => s.round_buzzer,
 };
@@ -18,6 +19,7 @@ String roundIcon(RoundType t) => switch (t) {
   RoundType.auction => 'round_auction.svg',
   RoundType.similar => 'round_similar.svg',
   RoundType.sard => 'round_sard.svg',
+  RoundType.ayahByAyah => 'round_ayah_by_ayah.svg',
   RoundType.rightLeft => 'round_right_left.svg',
   RoundType.buzzer => 'round_buzzer.svg',
 };
@@ -31,6 +33,7 @@ String roundInstruction(S s, RoundType t, {int strikes = 3}) => switch (t) {
   RoundType.auction => s.round_hint_auction,
   RoundType.similar => s.round_hint_similar,
   RoundType.sard => s.round_hint_sard,
+  RoundType.ayahByAyah => s.round_hint_ayah_by_ayah,
   RoundType.rightLeft => s.round_hint_right_left,
   RoundType.buzzer => s.round_hint_buzzer,
 };

@@ -23,7 +23,7 @@ class Scoreboard extends StatelessWidget {
       return null;
     }
     return switch (r.type) {
-      RoundType.whatDoYouKnow => r.turn,
+      RoundType.whatDoYouKnow || RoundType.ayahByAyah => r.turn,
       RoundType.auction => r.reciter ?? r.highBidder,
       RoundType.buzzer => r.activeBuzzer,
       RoundType.rightLeft =>

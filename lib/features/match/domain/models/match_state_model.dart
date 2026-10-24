@@ -36,13 +36,14 @@ class PlayerAnswerModel {
       );
 }
 
-/// The five rounds, in the show's order.
+/// The rounds, in the show's order.
 enum RoundType {
   whatDoYouKnow('what_do_you_know'),
   ayahNumber('ayah_number'),
   auction('auction'),
   similar('similar'),
   sard('sard'),
+  ayahByAyah('ayah_by_ayah'),
   rightLeft('right_left'),
   buzzer('buzzer');
 
@@ -281,6 +282,12 @@ class RoundModel {
   /// An extra question because the scores were level at the end.
   final bool tiebreak;
 
+  /// The player who gave this question up (the other one got its points).
+  final MatchRole? forfeited;
+
+  /// آية بآية: how far the players got.
+  final AyahChainModel? chain;
+
   /// يمين يسار: the runs.
   final RightLeftModel? rightLeft;
 
@@ -316,6 +323,8 @@ class RoundModel {
     this.points = 1,
     this.replaced = false,
     this.tiebreak = false,
+    this.forfeited,
+    this.chain,
     this.rightLeft,
   });
 
@@ -370,12 +379,73 @@ class RoundModel {
       points: (json['points'] as num?)?.toInt() ?? 1,
       replaced: json['replaced'] == true,
       tiebreak: json['tiebreak'] == true,
+      forfeited: MatchRole.fromWire(json['forfeited'] as String?),
+      chain: switch (_map(json['chain'])) {
+        final m? => AyahChainModel.fromJson(m),
+        null => null,
+      },
       rightLeft: switch (_map(json['rightLeft'])) {
         final m? => RightLeftModel.fromJson(m),
         null => null,
       },
     );
   }
+}
+
+/// آية بآية: one next ayah, and the opening that tells it apart.
+class ChainAyahModel {
+  final int surah;
+  final int ayah;
+  final String surahName;
+  final String text;
+
+  /// What the player must say.
+  final String opening;
+
+  const ChainAyahModel({
+    required this.surah,
+    required this.ayah,
+    required this.surahName,
+    required this.text,
+    required this.opening,
+  });
+
+  factory ChainAyahModel.fromJson(Map<String, dynamic> json) => ChainAyahModel(
+    surah: (json['surah'] as num?)?.toInt() ?? 0,
+    ayah: (json['ayah'] as num?)?.toInt() ?? 0,
+    surahName: json['surahName'] as String? ?? '',
+    text: json['text'] as String? ?? '',
+    opening: json['opening'] as String? ?? '',
+  );
+}
+
+/// آية بآية: the next ayahs said so far, and (referee) the one due next.
+class AyahChainModel {
+  final int step;
+  final int length;
+
+  /// The openings said so far, in order (aloud, so everyone sees them).
+  final List<String> said;
+
+  /// The ayah due next; the referee's only.
+  final ChainAyahModel? next;
+
+  const AyahChainModel({
+    required this.step,
+    required this.length,
+    this.said = const [],
+    this.next,
+  });
+
+  factory AyahChainModel.fromJson(Map<String, dynamic> json) => AyahChainModel(
+    step: (json['step'] as num?)?.toInt() ?? 0,
+    length: (json['length'] as num?)?.toInt() ?? 0,
+    said: [for (final s in json['said'] as List? ?? const []) '$s'],
+    next: switch (_map(json['next'])) {
+      final m? => ChainAyahModel.fromJson(m),
+      null => null,
+    },
+  );
 }
 
 /// A match as this device's role may see it (see the server's `snapshotFor`).
@@ -411,6 +481,9 @@ class MatchStateModel {
   final MatchRole? winner;
   final bool isDraw;
 
+  /// The player who quit the match (the other one won it).
+  final MatchRole? forfeitedBy;
+
   /// When this snapshot arrived, to count [RoundModel.secondsLeft] down.
   final DateTime receivedAt;
 
@@ -425,6 +498,7 @@ class MatchStateModel {
     required this.winner,
     required this.isDraw,
     required this.receivedAt,
+    this.forfeitedBy,
     this.published = true,
     this.perRound = 4,
     this.rounds = RoundType.values,
@@ -503,6 +577,7 @@ class MatchStateModel {
       round: round == null ? null : RoundModel.fromJson(round),
       winner: MatchRole.fromWire(json['winner'] as String?),
       isDraw: json['winner'] == 'draw',
+      forfeitedBy: MatchRole.fromWire(json['forfeitedBy'] as String?),
       receivedAt: DateTime.now(),
     );
   }

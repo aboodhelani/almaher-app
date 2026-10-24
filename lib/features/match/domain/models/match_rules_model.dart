@@ -22,6 +22,8 @@ class MatchRulesModel {
   final int sardPoints;
   final int sardSeconds;
   final int sardStrikes;
+  final int ayahByAyahPoints;
+  final int ayahByAyahSeconds;
   final int rightLeftPoints;
   final int rightLeftItemSeconds;
   final int buzzerPoints;
@@ -46,6 +48,8 @@ class MatchRulesModel {
     this.sardPoints = 1,
     this.sardSeconds = 30,
     this.sardStrikes = 2,
+    this.ayahByAyahPoints = 1,
+    this.ayahByAyahSeconds = 45,
     this.rightLeftPoints = 1,
     this.rightLeftItemSeconds = 3,
     this.buzzerPoints = 1,
@@ -86,6 +90,8 @@ class MatchRulesModel {
       sardPoints: n('sard', 'points', d.sardPoints),
       sardSeconds: n('sard', 'seconds', d.sardSeconds),
       sardStrikes: n('sard', 'strikes', d.sardStrikes),
+      ayahByAyahPoints: n('ayah_by_ayah', 'points', d.ayahByAyahPoints),
+      ayahByAyahSeconds: n('ayah_by_ayah', 'seconds', d.ayahByAyahSeconds),
       rightLeftPoints: n('right_left', 'points', d.rightLeftPoints),
       rightLeftItemSeconds: n(
         'right_left',

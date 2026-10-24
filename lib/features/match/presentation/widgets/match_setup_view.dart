@@ -732,7 +732,9 @@ class _NewQuestionDialogState extends State<_NewQuestionDialog> {
     super.dispose();
   }
 
-  bool get _isSard => widget.type == RoundType.sard;
+  /// السرد and آية بآية are built from one ayah.
+  bool get _isSard =>
+      widget.type == RoundType.sard || widget.type == RoundType.ayahByAyah;
   bool get _isRightLeft => widget.type == RoundType.rightLeft;
   bool get _needsPrompt =>
       widget.type != RoundType.ayahNumber && !_isSard && !_isRightLeft;
@@ -768,7 +770,8 @@ class _NewQuestionDialogState extends State<_NewQuestionDialog> {
           : {'refs': refs};
     }
     if (_isSard) {
-      // السرد is built from its ayah (opening words and last word).
+      // Built from its ayah: السرد's opening and last word, آية بآية's
+      // opening and next ayahs.
       final refs = _parsedRefs;
       return refs == null || refs.length != 1 ? null : {'refs': refs};
     }

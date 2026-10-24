@@ -38,6 +38,7 @@ Color roundColor(RoundType type) => switch (type) {
   RoundType.auction => GameColors.auction,
   RoundType.similar => GameColors.similar,
   RoundType.sard => GameColors.sard,
+  RoundType.ayahByAyah => GameColors.ayahByAyah,
   RoundType.rightLeft => GameColors.rightLeft,
   RoundType.buzzer => GameColors.buzzer,
 };

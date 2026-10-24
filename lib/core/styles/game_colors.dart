@@ -36,6 +36,7 @@ abstract class GameColors {
   static const auction = Brand.gold300;
   static const similar = Brand.navy400;
   static const sard = Brand.gold600;
+  static const ayahByAyah = Brand.navy100;
   static const rightLeft = Brand.navy200;
   static const buzzer = Brand.gold200;
 

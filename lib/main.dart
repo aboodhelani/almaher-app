@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-
 import 'core/helper/helper.dart';
 import 'core/router/router.dart';
 import 'core/styles/app_theme.dart';
@@ -37,8 +36,7 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   // Arabic is the app's base language.
   Locale localeState = const Locale("ar");
-  final GlobalKey<ScaffoldMessengerState> snackBarKey =
-      GlobalKey<ScaffoldMessengerState>();
+  final GlobalKey<ScaffoldMessengerState> snackBarKey = GlobalKey<ScaffoldMessengerState>();
   final FlutterLocalization _localization = FlutterLocalization.instance;
 
   @override
@@ -60,9 +58,7 @@ class _AppState extends State<App> {
     setState(() {
       localeState = locale ?? const Locale("ar");
     });
-    sl<AppSharedPrefs>().setLang(
-      LanguageEnumExtension.valueOf(localeState.languageCode),
-    );
+    sl<AppSharedPrefs>().setLang(LanguageEnumExtension.valueOf(localeState.languageCode));
   }
 
   @override
@@ -78,19 +74,12 @@ class _AppState extends State<App> {
       ],
       child: MultiProvider(
         providers: [
-          ChangeNotifierProvider(
-            create: (_) => AppNotifier(sl<AppSharedPrefs>()),
-          ),
+          ChangeNotifierProvider(create: (_) => AppNotifier(sl<AppSharedPrefs>())),
           ChangeNotifierProvider.value(value: sl<RecitationPlayer>()),
         ],
         child: Consumer<AppNotifier>(
           builder: (context, value, child) {
-            ScreenUtil.init(
-              context,
-              designSize: const Size(390, 844),
-              minTextAdapt: true,
-              splitScreenMode: true,
-            );
+            ScreenUtil.init(context, designSize: const Size(390, 844), minTextAdapt: true, splitScreenMode: true);
             return MaterialApp(
               title: 'الماهر',
               scaffoldMessengerKey: snackBarKey,
@@ -101,15 +90,9 @@ class _AppState extends State<App> {
               debugShowCheckedModeBanner: false,
               locale: localeState,
               supportedLocales: _localization.supportedLocales,
-              localizationsDelegates: [
-                S.delegate,
-                ..._localization.localizationsDelegates,
-              ],
+              localizationsDelegates: [S.delegate, ..._localization.localizationsDelegates],
               navigatorKey: Helper.navigatorKey,
-              home: BlocProvider(
-                create: (_) => SplashBloc(),
-                child: const SplashPage(),
-              ),
+              home: BlocProvider(create: (_) => SplashBloc(), child: const SplashPage()),
             );
           },
         ),

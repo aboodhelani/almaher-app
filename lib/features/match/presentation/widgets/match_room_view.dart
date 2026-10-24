@@ -29,6 +29,7 @@ class MatchRoomView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
     final round = match.round;
     if (match.status == MatchStatus.finished) return _Finished(match: match);
     return ListView(
@@ -67,6 +68,18 @@ class MatchRoomView extends StatelessWidget {
               children: [
                 QuestionCard(match: match, round: round),
                 SizedBox(height: 14.h),
+                if (round.forfeited case final quitter?
+                    when round.revealed) ...[
+                  GameBanner(
+                    icon: Icons.flag_rounded,
+                    color: playerColor(quitter.opponent),
+                    text: s.match_question_forfeited(
+                      match.participants[quitter]?.name ?? '',
+                      match.participants[quitter.opponent]?.name ?? '',
+                    ),
+                  ),
+                  SizedBox(height: 14.h),
+                ],
                 if (round.type.usesNumbers) ...[
                   AnswersRow(match: match, round: round),
                   SizedBox(height: 14.h),
@@ -348,6 +361,17 @@ class _Finished extends StatelessWidget {
               shadows: [Shadow(color: color, blurRadius: 24)],
             ),
           ),
+          if (match.forfeitedBy case final quitter?) ...[
+            SizedBox(height: 10.h),
+            Text(
+              s.match_forfeited(match.participants[quitter]?.name ?? ''),
+              textAlign: TextAlign.center,
+              style: AppTextStyle.medium.copyWith(
+                color: GameColors.textMuted,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
           SizedBox(height: 22.h),
           GamePanel(
             child: Column(

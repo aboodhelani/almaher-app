@@ -135,6 +135,38 @@ class ReplaceQuestionUseCase extends UseCase<void, NoParams> {
       repository.replaceQuestion();
 }
 
+/// Referee: ends the match now, with the current scores.
+class EndMatchUseCase extends UseCase<void, NoParams> {
+  final MatchRepo repository;
+
+  EndMatchUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, void>> call(NoParams params) => repository.endMatch();
+}
+
+/// Player: gives up the current question; the other player gets its points.
+class ForfeitQuestionUseCase extends UseCase<void, NoParams> {
+  final MatchRepo repository;
+
+  ForfeitQuestionUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, void>> call(NoParams params) =>
+      repository.forfeitQuestion();
+}
+
+/// Player: quits the match; the other player wins it.
+class ForfeitMatchUseCase extends UseCase<void, NoParams> {
+  final MatchRepo repository;
+
+  ForfeitMatchUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, void>> call(NoParams params) =>
+      repository.forfeitMatch();
+}
+
 /// Remote matches: joins this seat to the match's audio/video room.
 class GetMediaTokenUseCase extends UseCase<MediaTokenModel, NoParams> {
   final MatchRepo repository;
